@@ -1,0 +1,1658 @@
+[
+  {
+    "title": "Flyprompt: Brain-inspired random-expanded routing with temporal-ensemble experts for general continual learning",
+    "authors": [
+      "Yan",
+      "Sun",
+      "Zhou",
+      "Li",
+      "Wang",
+      "Zhong"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "General continual learning (GCL) challenges intelligent systems to learn from single-pass, non-stationary data streams without clear task boundaries. While recent advances in continual parameter-efficient tuning (PET) of pretrained models show promise, they typically rely on multiple training epochs and explicit task cues, limiting their effectiveness in GCL scenarios. Moreover, existing methods often lack targeted design and fail to address two fundamental challenges in continual PET: how to allocate expert parameters to evolving data distributions, and how to improve their representational capacity under limited supervision. Inspired by the fruit fly’s hierarchical memory system characterized by sparse expansion and modular ensembles, we propose FlyPrompt, a brain-inspired framework that decomposes GCL into two subproblems: expert routing and expert competence improvement. FlyPrompt introduces a randomly expanded analytic router for instance-level expert activation and a temporal ensemble of output heads to dynamically adapt decision boundaries over time. Extensive theoretical and empirical evaluations demonstrate FlyPrompt’s superior performance, achieving up to 11.23%, 12.43%, and 7.62% gains over state-of-the-art baselines on CIFAR-100, ImageNet-R, and CUB-200, respectively. Our source code is available at FlyGCL."
+  },
+  {
+    "title": "One-prompt strikes back: Sparse mixture of experts for prompt-based continual learning",
+    "authors": [
+      "Le",
+      "Dao",
+      "Nguyen",
+      "Tran",
+      "Nguyen",
+      "Ho"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Prompt-based methods have recently gained prominence in Continual Learning (CL) due to their strong performance and memory efficiency. A prevalent strategy in this paradigm assigns a dedicated subset of prompts to each task, which, while effective, incurs substantial computational overhead and causes memory requirements to scale linearly with the number of tasks. Conversely, approaches employing a single shared prompt across tasks offer greater efficiency but often suffer from degraded performance due to knowledge interference. To reconcile this trade-off, we propose SMoPE, a novel framework that integrates the benefits of both task-specific and shared prompt strategies. Inspired by recent findings on the relationship between Prefix Tuning and Mixture of Experts (MoE), SMoPE organizes a shared prompt into multiple \"prompt experts\" within a sparse MoE architecture. For each input, only a select subset of relevant experts is activated, effectively mitigating interference. To facilitate expert selection, we introduce a prompt-attention score aggregation mechanism that computes a unified proxy score for each expert, enabling dynamic and sparse activation. Additionally, we propose an adaptive noise mechanism to encourage balanced expert utilization while preserving knowledge from prior tasks. To further enhance expert specialization, we design a prototype-based loss function that leverages prefix keys as implicit memory representations. Extensive experiments across multiple CL benchmarks demonstrate that SMoPE consistently outperforms task-specific prompt methods and achieves performance competitive with state-of-the-art approaches, all while significantly reducing parameter counts and computational costs. Our code is publicly available at https://github.com/Minhchuyentoancbn/SMoPE."
+  },
+  {
+    "title": "ARECHO: Autoregressive evaluation via chain-based hypothesis optimization for speech multi-metric estimation",
+    "authors": [
+      "Shi",
+      "Cheng",
+      "Su",
+      "Shim",
+      "Tian",
+      "Cornell",
+      "Zhao",
+      "Arora",
+      "Watanabe"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Speech signal analysis poses significant challenges, particularly in tasks such as speech quality evaluation and profiling, where the goal is to predict multiple perceptual and objective metrics. For instance, metrics like PESQ (Perceptual Evaluation of Speech Quality), STOI (Short-Time Objective Intelligibility), and MOS (Mean Opinion Score) each capture different aspects of speech quality. However, these metrics often have different scales, assumptions, and dependencies, making joint estimation non-trivial. To address these issues, we introduce ARECHO (Autoregressive Evaluation via Chain-based Hypothesis Optimization), a chain-based, versatile evaluation system for speech assessment grounded in autoregressive dependency modeling. ARECHO is distinguished by three key innovations: (1) a comprehensive speech information tokenization pipeline; (2) a dynamic classifier chain that explicitly captures inter-metric dependencies; and (3) a two-step confidence-oriented decoding algorithm that enhances inference reliability. Experiments demonstrate that ARECHO significantly outperforms the baseline framework across diverse evaluation scenarios, including enhanced speech analysis, speech generation evaluation, and, noisy speech evaluation. Furthermore, its dynamic dependency modeling improves interpretability by capturing inter-metric relationships. Across tasks, ARECHO offers reference-free evaluation using its dynamic classifier chain to support subset queries (single or multiple metrics) and reduces error propagation via confidence-oriented decoding."
+  },
+  {
+    "title": "Overcoming joint intractability with lossless hierarchical speculative decoding",
+    "authors": [
+      "Zhou",
+      "Huang",
+      "Li",
+      "Wu",
+      "Wang",
+      "Zhang",
+      "Lin",
+      "Cheng"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Verification is a key bottleneck in improving inference speed while maintaining distribution fidelity in Speculative Decoding. Recent work has shown that sequence-level verification leads to a higher number of accepted tokens compared to token-wise verification. However, existing solutions often rely on surrogate approximations or are constrained by partial information, struggling with joint intractability. In this work, we propose Hierarchical Speculative Decoding (HSD), a provably lossless verification method that significantly boosts the expected number of accepted tokens and overcomes joint intractability by balancing excess and deficient probability mass across accessible branches. Our extensive large-scale experiments demonstrate that HSD yields consistent improvements in acceptance rates across diverse model families and benchmarks. Moreover, its strong explainability and generality make it readily integrable into a wide range of speculative decoding frameworks. Notably, integrating HSD into EAGLE-3 yields over a 12% performance gain, establishing state-of-the-art decoding efficiency without compromising distribution fidelity. Code is available at https://github.com/ZhouYuxuanYX/Hierarchical-Speculative-Decoding."
+  },
+  {
+    "title": "Towards lifelong learning of large language models: A survey",
+    "authors": [
+      "Zheng",
+      "Qiu",
+      "Shi",
+      "Ma"
+    ],
+    "year": "三月 7, 2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://dl.acm.org/doi/10.1145/3716629",
+    "abstract": "As the applications of large language models (LLMs) expand across diverse fields, their ability to adapt to ongoing changes in data, tasks, and user preferences becomes crucial. Traditional training methods with static datasets are inadequate for coping with the dynamic nature of real-world information. Lifelong learning, or continual learning, addresses this by enabling LLMs to learn continuously and adapt over their operational lifetime, integrating new knowledge while retaining previously learned information and preventing catastrophic forgetting. Our survey explores the landscape of lifelong learning, categorizing strategies into two groups based on how new knowledge is integrated: Internal Knowledge, where LLMs absorb new knowledge into their parameters through full or partial training, and External Knowledge, which incorporates new knowledge as external resources such as Wikipedia or APIs without updating model parameters. The key contributions of our survey include: (1) introducing a novel taxonomy to categorize the extensive literature of lifelong learning into 12 scenarios; (2) identifying common techniques across all lifelong learning scenarios and classifying existing literature into various technique groups; (3) highlighting emerging techniques such as model expansion and data selection, which were less explored in the pre-LLM era. Resources are available at ."
+  },
+  {
+    "title": "Continual learning of large language models: A comprehensive survey",
+    "authors": [
+      "Shi",
+      "Xu",
+      "Wang",
+      "Qin",
+      "Wang",
+      "Wang",
+      "Wang",
+      "Ebrahimi",
+      "Wang"
+    ],
+    "year": "十一月 20, 2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://dl.acm.org/doi/10.1145/3735633",
+    "abstract": "The challenge of effectively and efficiently adapting statically pre-trained Large Language Models (LLMs) to ever-evolving data distributions remains predominant. When tailored for specific needs, pre-trained LLMs often suffer from significant performance degradation in previous knowledge domains—a phenomenon known as “catastrophic forgetting”. While extensively studied in the Continual Learning (CL) community, this problem presents new challenges in the context of LLMs. In this survey, we provide a comprehensive overview and detailed discussion of the current research progress on LLMs within the context of CL. Besides the introduction of the preliminary knowledge, this survey is structured into four main sections: we first describe an overview of continually learning LLMs, consisting of two directions of continuity: vertical continuity (or vertical continual learning), i.e., continual adaptation from general to specific capabilities, and horizontal continuity (or horizontal continual learning), i.e., continual adaptation across time and domains (Section&nbsp;3). Following vertical continuity, we summarize three stages of learning LLMs in the context of modern CL: Continual Pre-Training (CPT), Domain-Adaptive Pre-training (DAP), and Continual Fine-Tuning (CFT) (Section&nbsp;4). We then provide an overview of evaluation protocols for continual learning with LLMs, along with currently available data sources (Section&nbsp;5). Finally, we discuss intriguing questions related to continual learning for LLMs (Section&nbsp;6). This survey sheds light on the relatively understudied domain of continually pre-training, adapting, and fine-tuning large language models, suggesting the necessity for greater attention from the community. Key areas requiring immediate focus include the development of practical and accessible evaluation benchmarks, along with methodologies specifically designed to counter forgetting and enable knowledge transfer within the evolving landscape of LLM learning paradigms. The full list of articles examined in this survey is available at https://github.com/Wang-ML-Lab/llm-continual-learning-survey."
+  },
+  {
+    "title": "Self-improvement in multimodal large language models: A survey",
+    "authors": [
+      "Deng",
+      "Wang",
+      "Yang",
+      "Singh",
+      "Tian"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Recent advancements in self-improvement for Large Language Models (LLMs) have efficiently enhanced model capabilities without significantly increasing costs, particularly in terms of human effort. While this area is still relatively young, its extension to the multimodal domain holds immense potential for leveraging diverse data sources and developing more general self-improving models. This survey is the first to provide a comprehensive overview of self-improvement in Multimodal LLMs (MLLMs). We provide a structured overview of the current literature and discuss methods from three perspectives: 1) data collection, 2) data organization, and 3) model optimization, to facilitate the further development of self-improvement in MLLMs. We also include commonly used evaluations and downstream applications. Finally, we conclude by outlining open challenges and future research directions."
+  },
+  {
+    "title": "Recent advances of continual learning in computer vision: An overview",
+    "authors": [
+      "Qu",
+      "Rahmani",
+      "Xu",
+      "Williams",
+      "Liu"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [
+      "computer vision",
+      "image sequences",
+      "neural nets"
+    ],
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1049/cvi2.70013",
+    "abstract": "In contrast to batch learning where all training data is available at once, continual learning represents a family of methods that accumulate knowledge and learn continuously with data available in sequential order. Similar to the human learning process with the ability of learning, fusing and accumulating new knowledge acquired at different time steps, continual learning is considered to have high practical significance. Hence, continual learning has been studied in various artificial intelligence tasks. In this paper, we present a comprehensive review of the recent progress of continual learning in computer vision. In particular, the works are grouped by their representative techniques, including regularisation, knowledge distillation, memory, generative replay, parameter isolation and a combination of the above techniques. For each category of these techniques, both its characteristics and applications in computer vision are presented. At the end of this overview, several subareas, where continuous knowledge accumulation is potentially helpful while continual learning has not been well studied, are discussed."
+  },
+  {
+    "title": "Agentic context engineering: Evolving con- texts for self-improving language models",
+    "authors": [
+      "Zhang",
+      "Hu",
+      "Upasani",
+      "Ma",
+      "Hong",
+      "Kamanuru",
+      "Rainton",
+      "Wu",
+      "Ji",
+      "Li",
+      "Thakker",
+      "Zou",
+      "Olukotun"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large language model (LLM) applications such as agents and domain-specific reasoning increasingly rely on context adaptation: modifying inputs with instructions, strategies, or evidence, rather than weight updates. Prior approaches improve usability but often suffer from brevity bias, which drops domain insights for concise summaries, and from context collapse, where iterative rewriting erodes details over time. We introduce ACE (Agentic Context Engineering), a framework that treats contexts as evolving playbooks that accumulate, refine, and organize strategies through a modular process of generation, reflection, and curation. ACE prevents collapse with structured, incremental updates that preserve detailed knowledge and scale with long-context models. Across agent and domain-specific benchmarks, ACE optimizes contexts both offline (e.g., system prompts) and online (e.g., agent memory), consistently outperforming strong baselines: +10.6% on agents and +8.6% on finance, while significantly reducing adaptation latency and rollout cost. Notably, ACE could adapt effectively without labeled supervision and instead by leveraging natural execution feedback. On the AppWorld leaderboard, ACE matches the top-ranked production-level agent on the overall average and surpasses it on the harder test-challenge split, despite using a smaller opensource model. These results show that comprehensive, evolving contexts enable scalable, efficient, and self-improving LLM systems with low overhead."
+  },
+  {
+    "title": "Theoretical modeling of large language model self-improvement training dynamics through solver-verifier gap",
+    "authors": [
+      "Sun",
+      "Liang",
+      "Zhang",
+      "Liu",
+      "Teng"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Self-improvement is a significant techniques within the realm of large language model (LLM), aiming to enhance the LLM performance without relying on external data. Despite its significance, generally how LLM performance evolves during the self-improvement process remains underexplored. In this paper, we theoretically model the training dynamics of self-improvement via the concept of solver-verifier gap. This is inspired by the conjecture that the performance enhancement of selfimprovement stems from the gap between LLM’s solver capability and verifier capability. Based on the theoretical framework, we further show how to model the entire training trajectory. This framework allows quantifying the capability limit of self-improvement by fitting the theoretical model to the experiment results. We validate the effectiveness of the theoretical framework on various LLMs and datasets. Beyond self-improvement, we extend our analysis to investigate how external data influences these dynamics within the framework. Notably, we find that under limited external data regimes, such external data can be utilized at any stage without significantly affecting final performances, which accords with the empirical observations."
+  },
+  {
+    "title": "Mitigating tail narrowing in LLM self-improvement via socratic-guided sampling",
+    "authors": [
+      "Ding",
+      "Xi",
+      "He",
+      "Li",
+      "Zhai",
+      "Shi",
+      "Cai",
+      "Gui",
+      "Zhang",
+      "Huang"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Self-improvement methods enable large language models (LLMs) to generate solutions themselves and iteratively train on filtered, high-quality rationales. This process proves effective and reduces the reliance on human supervision in LLMs’ reasoning, but the performance soon plateaus. We delve into the process and find that models tend to over-sample on easy queries and under-sample on queries they have yet to master. As iterations proceed, this imbalance in sampling is exacerbated, leading to a long-tail distribution where solutions to difficult queries almost diminish. This phenomenon limits the performance gain of selfimproving models. A straightforward solution is brute-force sampling to balance the distribution, which significantly raises computational costs. In this paper, we introduce Guided SelfImprovement (GSI), a strategy aimed at improving the efficiency of sampling challenging heavy-tailed data. It leverages Socratic-style guidance signals to help LLM reasoning with complex queries, reducing the exploration effort and minimizing computational overhead. Experiments on four models across diverse mathematical tasks show that GSI strikes a balance between performance and efficiency, while also being effective on held-out tasks1."
+  },
+  {
+    "title": "Self-improvement in language models: The sharpening mechanism",
+    "authors": [
+      "Huang",
+      "Block",
+      "Foster"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Diving into self-evolving training for multimodal reasoning",
+    "authors": [
+      "Liu",
+      "Li",
+      "Zhang",
+      "Zhou",
+      "Cheng",
+      "He"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Self-evolving training—where models iteratively learn from their own outputs—has emerged as a key approach for complex reasoning tasks, addressing the scarcity of high-quality chain-ofthought data. However, its effectiveness in multimodal reasoning, a domain more intricate than text-only reasoning, remains underexplored, and the understanding of critical factors in this training paradigm remains limited. Furthermore, a central challenge for this training method is performance saturation, which impedes further improvements and scalability. Inspired by reinforcement learning (RL), in this paper, we reframe self-evolving training for multimodal reasoning through the lens of RL, identifying three pivotal factors: Training Method, Reward Model, and Prompt Variation. Through systematic analysis, we establish relatively optimal design principles that significantly enhance multimodal reasoning capabilities. Moreover, delving deeper into training dynamics, we uncover the roots of saturation and propose a new automatic balancing mechanism to mitigate this limitation. Building on these insights, we propose M-STAR (Multimodal Self-evolving Training for Reasoning), a framework that achieves consistent performance gains across models of varying sizes and diverse benchmarks. All resources are made publicly available at https://mstar-lmm.github.io."
+  },
+  {
+    "title": "B-star: Monitoring and balancing exploration and exploitation in self-taught reasoners",
+    "authors": [
+      "Zeng",
+      "Huang",
+      "Zhao",
+      "Wang",
+      "Shan",
+      "He"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Bits leaked per query: Information-theoretic bounds on adversarial attacks against LLMs",
+    "authors": [
+      "Kaneko",
+      "Baldwin"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Adversarial attacks by malicious users that threaten the safety of large language models (LLMs) can be viewed as attempts to infer a target property T that is unknown when an instruction is issued, and becomes knowable only after the model’s reply is observed. Examples of target properties T include the binary flag that triggers an LLM’s harmful response or rejection, and the degree to which information deleted by unlearning can be restored, both elicited via adversarial instructions. The LLM reveals an observable signal Z that potentially leaks hints for attacking through a response containing answer tokens, thinking process tokens, or logits. Yet the scale of information leaked remains anecdotal, leaving auditors without principled guidance and defenders blind to the transparency–risk trade-off. We fill this gap with an information-theoretic framework that computes how much information can be safely disclosed, and enables auditors to gauge how close their methods come to the fundamental limit. Treating the mutual information I(Z; T ) between the observation Z and the target property T as the leaked bits per query, we show that achieving error ε requires at least log(1/ε)/I(Z; T ) queries, scaling linearly with the inverse leak rate and only logarithmically with the desired accuracy. Thus, even a modest increase in disclosure collapses the attack cost from quadratic to logarithmic in terms of the desired accuracy. Experiments on seven LLMs across system-prompt leakage, jailbreak, and relearning attacks corroborate the theory: exposing answer tokens alone requires about a thousand queries; adding logits cuts this to about a hundred; and revealing the full thinking process trims it to a few dozen. Our results provide the first principled yardstick for balancing transparency and security when deploying LLMs."
+  },
+  {
+    "title": "Why do some language models fake alignment while others don’t?",
+    "authors": [
+      "Sheshadri",
+      "Hughes",
+      "Michael",
+      "Mallen",
+      "Jose"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Alignment faking in large language models presented a demonstration of Claude 3 Opus and Claude 3.5 Sonnet selectively complying with a helpfulonly training objective to prevent modification of their behavior outside of training. We expand this analysis to 25 models and find that only 5 (Claude 3 Opus, Claude 3.5 Sonnet, Llama 3 405B, Grok 3, Gemini 2.0 Flash) comply with harmful queries more when they infer they are in training than when they infer they are in deployment. First, we study the motivations of these 5 models. Results from perturbing details of the scenario suggest that only Claude 3 Opus’s compliance gap is primarily and consistently motivated by trying to keep its goals. Second, we investigate why many chat models don’t fake alignment. Our results suggest this is not entirely due to a lack of capabilities: many base models fake alignment some of the time, and post-training eliminates alignment-faking for some models and amplifies it for others.We investigate 5 hypotheses for how post-training may suppress alignment faking and find that variations in refusal behavior may account for a significant portion of differences in alignment faking."
+  },
+  {
+    "title": "Twilight: Adaptive attention sparsity with hierarchical top-p pruning",
+    "authors": [
+      "Lin",
+      "Tang",
+      "Yang",
+      "Wang",
+      "Tang",
+      "Tian",
+      "Stoica",
+      "Han",
+      "Gao"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Leveraging attention sparsity to accelerate long-context large language models (LLMs) has been of great importance recently. However, most existing sparse attention algorithms use a fixed budget of how many tokens to use in their computations. This simple static decision raises critical issues in real-world deployment because it fails to account for the dynamic nature of real-world scenarios, where the optimal balance between accuracy and efficiency can vary greatly. In this paper, we reveal a key insight that leveraging the idea of top-p sampling (a.k.a., nucleus sampling) in sparse attention could enable efficient and adaptive budget decisions. Based on this, we propose Twilight, a framework that enhances any existing sparse attention algorithm with adaptive budget decision capabilities without sacrificing accuracy. Empirical results show that Twilight can adaptively prune up to 98% tokens with nearly no accuracy loss in both long- and medium-context scenarios, leading to a 1.4× speedup over state-of-the-art sparse attention mechanisms."
+  },
+  {
+    "title": "Transferring linear features across language models with model stitching",
+    "authors": [
+      "Chen",
+      "Merullo",
+      "Stolfo",
+      "Pavlick"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "In this work, we demonstrate that affine mappings between residual streams of language models is a cheap way to effectively transfer represented features between models. We apply this technique to transfer the weights of Sparse Autoencoders (SAEs) between models of different sizes to compare their representations. We find that small and large models learn similar representation spaces, which motivates training expensive components like SAEs on a smaller model and transferring to a larger model at a FLOPs savings. In particular, using a small-to-large transferred SAE as initialization can lead to 50% cheaper training runs when training SAEs on larger models. Next, we show that transferred probes and steering vectors can effectively recover ground truth performance. Finally, we dive deeper into feature-level transferability, finding that semantic and structural features transfer noticeably differently while specific classes of functional features have their roles faithfully mapped. Overall, our findings illustrate similarities and differences in the linear representation spaces of small and large models and demonstrate a method for improving the training efficiency of SAEs."
+  },
+  {
+    "title": "Signal and noise: A framework for reducing uncertainty in language model evaluation",
+    "authors": [
+      "Heineman",
+      "Hofmann",
+      "Magnusson",
+      "Gu",
+      "Smith",
+      "Hajishirzi",
+      "Lo",
+      "Dodge"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Developing large language models is expensive and involves making decisions with small experiments, typically by evaluating on large, multi-task evaluation suites. In this work, we analyze specific properties which make a benchmark more reliable for such decisions, and interventions to design higher-quality evaluation benchmarks. We introduce two key metrics that show differences in current benchmarks: signal, a benchmark’s ability to separate better models from worse models, and noise, a benchmark’s sensitivity to random variability between training steps. We demonstrate that benchmarks with a better signal-to-noise ratio are more reliable when making decisions at small scale, and those with less noise have lower scaling law prediction error. These results suggest that improving signal or noise will lead to more useful benchmarks, so we introduce three interventions designed to directly affect signal or noise. For example, we propose that switching to a metric that has better signal and noise (e.g., perplexity rather than accuracy) leads to better reliability and improved scaling law error. We also find that filtering noisy subtasks, to improve an aggregate signal-to-noise ratio, leads to more reliable multi-task evaluations. We also find that averaging the output of a model’s intermediate checkpoints to reduce noise leads to consistent improvements. We conclude by recommending that those creating new benchmarks, or selecting which existing benchmarks to use, aim for high signal and low noise. We use 30 benchmarks for these experiments, and 375 open-weight language models from 60M to 32B parameters, resulting in a new, publicly available dataset of 900K evaluation benchmark results, totaling 200M instances."
+  },
+  {
+    "title": "Activation control for efficiently eliciting long chain-of-thought ability of language models",
+    "authors": [
+      "Zhao",
+      "Liu",
+      "Zhou",
+      "Liu",
+      "Shao",
+      "Hu",
+      "Huang"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite the remarkable reasoning performance, eliciting the long chain-ofthought (CoT) ability in large language models (LLMs) typically requires costly reinforcement learning or supervised fine-tuning on high-quality distilled data. We investigate the internal mechanisms behind this capability and show that a small set of high-impact activations in the last few layers, greatly govern the long-form reasoning attributes, e.g., output length and self-reflection. Through simply amplifying these activations and adding “wait” tokens, the long CoT ability can be invoked without training, leading to significantly increased self-reflection rate and accuracy. In addition, we also find that the activation changes follow predictable trajectories, i.e., a sharp rise after special tokens and a subsequent exponential decay. Based on these insights, we introduce a general training-free activation control technique. It utilizes a few contrastive examples to identify the relevant activations, and then incorporates simple analytic functions to adjust their values at inference time to elicit long CoTs. Extensive experiments have verified the effectiveness of our methods in efficiently eliciting the long CoT ability of LLMs and improving the performance. Besides, we further propose a parameter-efficient fine-tuning method that trains only the last-layer activation amplification module and a few LoRA layers, outperforming LoRA on reasoning benchmarks with much fewer parameters. Our code and data are fully public released at https://github.com/ZekaiZ123/EELo-CoT."
+  },
+  {
+    "title": "ModHiFi: Identifying high fidelity predictive components for model modification",
+    "authors": [
+      "Kashyap",
+      "Murti",
+      "Nayak",
+      "Narshana",
+      "Bhattacharyya"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "LogicTree: Improving complex reasoning of LLMs via instantiated multi-step synthetic logical data",
+    "authors": [
+      "Wang",
+      "Yang",
+      "Wang",
+      "Wang",
+      "Chen",
+      "Wang",
+      "Hao",
+      "Lian",
+      "Li",
+      "Chen"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite their remarkable performance on various tasks, Large Language Models (LLMs) still struggle with logical reasoning, particularly in complex and multistep reasoning processes. Among various efforts to enhance LLMs’ reasoning capabilities, synthesizing large-scale, high-quality logical reasoning datasets has emerged as a promising direction. However, existing methods often rely on predefined templates for logical reasoning data generation, limiting their adaptability to real-world scenarios. To address the limitation, we propose LogicTree, a novel framework for efficiently synthesizing multi-step logical reasoning dataset that excels in both complexity and instantiation. By iteratively searching for applicable logic rules based on structural pattern matching to perform backward deduction, LogicTree constructs multi-step logic trees that capture complex reasoning patterns. Furthermore, we employ a two-stage LLM-based approach to instantiate various real-world scenarios for each logic tree, generating consistent real-world reasoning processes that carry contextual significance. This helps LLMs develop generalizable logical reasoning abilities across diverse scenarios rather than merely memorizing templates. Experiments on multiple benchmarks demonstrate that our approach achieves an average improvement of 9.4% in accuracy for LLMs on complex logical reasoning tasks."
+  },
+  {
+    "title": "Learning robust vision-language models from natural latent spaces",
+    "authors": [
+      "Wang",
+      "Ding"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Pre-trained vision-language models (VLMs) exhibit significant vulnerability to imperceptible adversarial perturbations. Current advanced defense strategies typically employ adversarial prompt tuning to improve the adversarial robustness of VLMs, which struggle to simultaneously maintain generalization across both natural and adversarial examples under different benchmarks and downstream tasks. We propose a collaborative adversarial prompt tuning (CoAPT) approach from pre-trained VLMs to target robust VLMs. Inspired by the image mask modeling, we adopt an improved real-time total variation algorithm to suppress and eliminate high-frequency details from images while preserving edge structures, thereby disrupting the adversarial perturbation space. Subsequently, guided by the high-level image and text representations in the latent space of the pre-trained VLMs, the corrupted natural features are restored while inheriting the superior generalization capability. Experiments on four benchmarks demonstrate that CoAPT achieves an excellent trade-off among natural generalization, adversarial robustness, and task-specific adaptation compared to state-of-the-art methods."
+  },
+  {
+    "title": "Knowledge insulating vision-language-action models: Train fast, run fast, generalize better",
+    "authors": [
+      "Driess",
+      "Springenberg",
+      "Ichter",
+      "Yu",
+      "Li-Bell",
+      "Pertsch",
+      "Ren",
+      "Walke",
+      "Vuong",
+      "Shi",
+      "Levine"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Vision-language-action (VLA) models provide a powerful approach to training control policies for physical systems, such as robots, by combining end-to-end learning with transfer of semantic knowledge from web-scale vision-language model (VLM) training. However, the constraints of real-time control are often at odds with the design of VLMs: the most powerful VLMs have tens or hundreds of billions of parameters, presenting an obstacle to real-time inference, and operate on discrete tokens rather than the continuous-valued outputs that are required for controlling robots. To address this challenge, recent VLA models have used specialized modules for efficient continuous control, such as action experts or continuous output heads, which typically require adding new untrained parameters to the pretrained VLM backbone. While these modules improve real-time and control capabilities, it remains an open question whether they preserve or degrade the semantic knowledge contained in the pretrained VLM, and what effect they have on the VLA training dynamics. In this paper, we study this question in the context of VLAs that include a continuous diffusion or flow matching action expert, showing that naively including such experts significantly harms both training speed and knowledge transfer. We provide an extensive analysis of various design choices, their impact on performance and knowledge transfer, and propose a technique for insulating the VLM backbone during VLA training that mitigates this issue. Videos are available at https://pi.website/research/knowledge_insulation and open-source model weights are available at https://github.com/Physical-Intelligence/openpi."
+  },
+  {
+    "title": "Inner speech as behavior guides: Steerable imitation of diverse behaviors for human-AI coordination",
+    "authors": [
+      "Trivedi",
+      "Sharma",
+      "Parkes"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Effective human-AI coordination requires artificial agents capable of exhibiting and responding to human-like behaviors while adapting to changing contexts. Imitation learning has emerged as one of the prominent approaches to build such agents by training them to mimic human-demonstrated behaviors. However, current methods struggle to capture the inherent diversity and non-Markovian nature of human behavior and lack the ability to steer behavior at inference time. Drawing inspiration from the theory of human cognitive processes, where inner speech guides action selection before execution, we propose MIMIC (Modeling Inner Motivations for Imitation and Control), a framework that uses language as an internal representation of behavioral intent. MIMIC employs the novel use of vision-language models as linguistic scaffolding to train a conditional variational autoencoder capable of generating inner speech from observations. A diffusion-based behavior cloning policy then selects actions conditioned on current observations and the generated inner speech. MIMIC enables fine-grained steering of behavior at inference time by conditioning the agent on behavior-specific speech. Experiments across robotic manipulation tasks and human-AI collaboration games demonstrate that MIMIC significantly enhances both behavior diversity and fidelity to human demonstrations while enabling nuanced behavioral steering without training on additional demonstrations. We open source our code and provide pre-trained MIMIC agents and qualitative demos at: https://mimic-research.github.io."
+  },
+  {
+    "title": "Head pursuit: Probing attention specialization in multimodal transformers",
+    "authors": [
+      "Basile",
+      "Maiorca",
+      "Doimo",
+      "Locatello",
+      "Cazzaniga"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Language and vision-language models have shown impressive performance across a wide range of tasks, but their internal mechanisms remain only partly understood. In this work, we study how individual attention heads in text-generative models specialize in specific semantic or visual attributes. Building on an established interpretability method, we reinterpret the practice of probing intermediate activations with the final decoding layer through the lens of signal processing. This lets us analyze multiple samples in a principled way and rank attention heads based on their relevance to target concepts. Our results show consistent patterns of specialization at the head level across both unimodal and multimodal transformers. Remarkably, we find that editing as few as 1% of the heads, selected using our method, can reliably suppress or enhance targeted concepts in the model output. We validate our approach on language tasks such as question answering and toxicity mitigation, as well as vision-language tasks including image classification and captioning. Our findings highlight an interpretable and controllable structure within attention layers, offering simple tools for understanding and editing large-scale generative models."
+  },
+  {
+    "title": "Causal differentiating concepts: Interpreting LM behavior via causal representation learning",
+    "authors": [
+      "Goyal",
+      "Iii"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Language model activations entangle concepts that mediate their behavior, making it difficult to interpret these factors, which has implications for generalizability and robustness. We introduce an approach for disentangling these concepts without supervision. Existing methods for concept discovery often rely on external labels, contrastive prompts, or known causal structures, which limits their scalability and biases them toward predefined, easily annotatable features. In contrast, we propose a new unsupervised algorithm that identifies causal differentiating concepts—interpretable latent directions in LM activations that must be changed to elicit a different model behavior. These concepts are discovered using a constrained contrastive learning objective, guided by the insight that eliciting a target behavior requires only sparse changes to the underlying concepts. We formalize this notion and show that, under a particular assumption about the sparsity of these causal differentiating concepts, our method learns disentangled representations that align with human-interpretable factors influencing LM decisions. We empirically show the ability of our method to recover ground-truth causal factors in synthetic and semi-synthetic settings. Additionally, we illustrate the utility of our method through a case study on refusal behavior in language models. Our approach offers a scalable and interpretable lens into the internal workings of LMs, providing a principled foundation for interpreting language model behavior."
+  },
+  {
+    "title": "Broken tokens? Your language model can secretly handle no n - ca noni cal tokenizations",
+    "authors": [
+      "Zheng",
+      "Liu",
+      "Ahia",
+      "Hayase",
+      "Choi",
+      "Smith"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "The emergence of sparse attention: Impact of data distribution and benefits of repetition",
+    "authors": [
+      "Zucchet",
+      "D’Angelo",
+      "Lampinen",
+      "Chan"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Emergence is a fascinating property of large language models and neural networks more broadly: as models scale and train for longer, they sometimes develop new abilities in sudden ways. Despite initial studies, we still lack a comprehensive understanding of how and when these abilities emerge. To address this gap, we study the emergence over training of sparse attention, a critical and frequently observed attention pattern in Transformers. By combining theoretical analysis of a toy model with empirical observations on small Transformers trained on a linear regression variant, we uncover the mechanics driving sparse attention emergence and reveal that emergence timing follows power laws based on task structure, architecture, and optimizer choice. We additionally find that repetition can greatly speed up emergence. Finally, we confirm these results on a well-studied in-context associative recall task. Our findings provide a simple, theoretically grounded framework for understanding how data distributions and model design influence the learning dynamics behind one form of emergence."
+  },
+  {
+    "title": "InfinityStar: Unified spacetime AutoRegressive modeling for visual generation",
+    "authors": [
+      "Liu",
+      "Han",
+      "Yan",
+      "Wu",
+      "Zhu",
+      "Wang",
+      "Jiang",
+      "Peng",
+      "Yuan"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We introduce InfinityStar, a unified spacetime autoregressive framework for highresolution image and dynamic video synthesis. Building on the recent success of autoregressive modeling in both vision and language, our purely discrete approach jointly captures spatial and temporal dependencies within a single architecture. This unified design naturally supports a variety of generation tasks such as textto-image, text-to-video, image-to-video, and long-duration video synthesis via straightforward temporal autoregression. Through extensive experiments, InfinityStar scores 83.74 on VBench, outperforming all autoregressive models by large margins, even surpassing diffusion competitors like HunyuanVideo. Without extra optimizations, our model generates a 5s, 720p video approximately 10× faster than leading diffusion-based methods. To our knowledge, InfinityStar is the first discrete autoregressive video generator capable of producing industrial-level 720p videos. We release all code and models to foster further research in efficient, high-quality video generation."
+  },
+  {
+    "title": "ElasticMM: Efficient multimodal LLMs serving with elastic multimodal parallelism",
+    "authors": [
+      "Liu",
+      "Cheng",
+      "Tan",
+      "You",
+      "Tao"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Multimodal large language models (MLLMs) extend LLMs to handle images, videos, and audio by incorporating feature extractors and projection modules. However, these additional components—combined with complex inference pipelines and heterogeneous workloads—introduce significant inference overhead. Therefore, efficiently serving MLLMs remains a major challenge. Current tightly coupled serving architectures struggle to distinguish between mixed request types or adapt parallelism strategies to different inference stages, leading to increased time-to-first-token (TTFT) and poor resource utilization. To address this, we introduce Elastic Multimodal Parallelism (EMP), a new serving paradigm that elastically adapts to resource heterogeneity across request types and inference stages. Building upon EMP, we develop ElasticMM, an MLLM serving system that (1) separates requests into independent modality groups with dynamic resource allocation via a modality-aware load balancer; (2) decouples inference stages and enables parallelism adjustment and adaptive scaling via elastic partition scheduling; and (3) improves inference efficiency through unified multimodal prefix caching and non-blocking encoding. Experiments on diverse real-world datasets show that ElasticMM outperforms state-of-the-art (SOTA) serving systems, reducing TTFT by up to 4.2× and achieving 3.2–4.5× higher throughput while meeting service-level objectives (SLOs)."
+  },
+  {
+    "title": "Boosting knowledge utilization in multimodal large language models via adaptive logits fusion and attention reallocation",
+    "authors": [
+      "An",
+      "Nie",
+      "Tian",
+      "Lin",
+      "Cai",
+      "Wu",
+      "Wang",
+      "Zhang",
+      "Lu"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite their recent progress, Multimodal Large Language Models (MLLMs) often struggle in knowledge-intensive tasks due to the limited and outdated parametric knowledge acquired during training. Multimodal Retrieval Augmented Generation addresses this issue by retrieving contextual knowledge from external databases, thereby enhancing MLLMs with expanded knowledge sources. However, existing MLLMs often fail to fully leverage the retrieved contextual knowledge for response generation. We examine representative MLLMs and identify two major causes, namely, attention bias toward different tokens and knowledge conflicts between parametric and contextual knowledge. To this end, we design Adaptive Logits Fusion and Attention Reallocation (ALFAR), a training-free and plugand-play approach that improves MLLM responses by maximizing the utility of the retrieved knowledge. Specifically, ALFAR tackles the challenges from two perspectives. First, it alleviates attention bias by adaptively shifting attention from visual tokens to relevant context tokens according to query-context relevance. Second, it decouples and weights parametric and contextual knowledge at output logits, mitigating conflicts between the two types of knowledge. As a plug-and-play method, ALFAR achieves superior performance across diverse datasets without requiring additional training or external tools. Extensive experiments over multiple MLLMs and benchmarks show that ALFAR consistently outperforms the state-of-the-art by large margins. Our code and data are available at https://github.com/Lackel/ALFAR."
+  },
+  {
+    "title": "Understanding and mitigating numerical sources of nondeterminism in LLM inference",
+    "authors": [
+      "Yuan",
+      "Li",
+      "Ding",
+      "Xie",
+      "Li",
+      "Zhao",
+      "Wan",
+      "Shi",
+      "Hu",
+      "Liu"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs) are now integral across various domains and have demonstrated impressive performance. Progress, however, rests on the premise that benchmark scores are both accurate and reproducible. We demonstrate that the reproducibility of LLM performance is fragile: changing system configuration, such as evaluation batch size, GPU count, and GPU version, can introduce significant differences in the generated responses. This issue is especially pronounced in reasoning models, where minor rounding differences in early tokens can cascade into divergent chains of thought, ultimately affecting accuracy. For instance, under bfloat16 precision with greedy decoding, a reasoning model like DeepSeek-R1-Distill-Qwen-7B can exhibit up to 9% variation in accuracy and 9,000 tokens difference in response length due to differences in GPU count, type, and evaluation batch size. We trace the root cause of this variability to the non-associative nature of floating-point arithmetic under limited numerical precision. This work presents the first systematic investigation into how numerical precision affects reproducibility in LLM inference. Through carefully controlled experiments across various hardware, software, and precision settings, we quantify when and how model outputs diverge. Our analysis reveals that floating-point precision—while critical for reproducibility—is often neglected in evaluation practices. Inspired by this, we develop a lightweight inference pipeline, dubbed LayerCast, that stores weights in 16-bit precision but performs all computations in FP32, balancing memory efficiency with numerical stability. Code is available at https://github.com/nanomaoli/llm_reproducibility."
+  },
+  {
+    "title": "The emergence of sparse attention: Impact of data distribution and benefits of repetition",
+    "authors": [
+      "Zucchet",
+      "D’Angelo",
+      "Lampinen",
+      "Chan"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Emergence is a fascinating property of large language models and neural networks more broadly: as models scale and train for longer, they sometimes develop new abilities in sudden ways. Despite initial studies, we still lack a comprehensive understanding of how and when these abilities emerge. To address this gap, we study the emergence over training of sparse attention, a critical and frequently observed attention pattern in Transformers. By combining theoretical analysis of a toy model with empirical observations on small Transformers trained on a linear regression variant, we uncover the mechanics driving sparse attention emergence and reveal that emergence timing follows power laws based on task structure, architecture, and optimizer choice. We additionally find that repetition can greatly speed up emergence. Finally, we confirm these results on a well-studied in-context associative recall task. Our findings provide a simple, theoretically grounded framework for understanding how data distributions and model design influence the learning dynamics behind one form of emergence."
+  },
+  {
+    "title": "PlayerOne: Egocentric world simulator",
+    "authors": [
+      "Tu",
+      "Luo",
+      "Chen",
+      "Bai",
+      "Wang",
+      "Zhao"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We introduce PlayerOne, the first egocentric realistic world simulator, facilitating immersive and unrestricted exploration within vividly dynamic environments. Given an egocentric scene image from the user, PlayerOne can accurately construct the corresponding world and generate egocentric videos that are strictly aligned with the real-scene human motion of the user captured by an exocentric camera. PlayerOne is trained in a coarse-to-fine pipeline that first performs pretraining on large-scale egocentric text-video pairs for coarse-level egocentric understanding, followed by finetuning on synchronous motion-video data extracted from egocentric-exocentric video datasets with our automatic construction pipeline. Besides, considering the varying importance of different components, we design a part-disentangled motion injection scheme, enabling precise control of part-level movements. In addition, we devise a joint reconstruction framework that progressively models both the 4D scene and video frames, ensuring scene consistency in the long-form video generation. Experimental results demonstrate its great generalization ability in precise control of varying human movements and worldconsistent modeling of diverse scenarios. It marks the first endeavor into egocentric real-world simulation and can pave the way for the community to delve into fresh frontiers of world modeling and its diverse applications."
+  },
+  {
+    "title": "Perception encoder: The best visual embeddings are not at the output of the network",
+    "authors": [
+      "Bolya",
+      "Huang",
+      "Sun",
+      "Cho",
+      "Wei",
+      "Ma",
+      "Zhi",
+      "Rajasegaran",
+      "Wang",
+      "Monteiro",
+      "Xu",
+      "Dong",
+      "Ravi",
+      "Li",
+      "Dollár",
+      "Feichtenhofer"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "On linear mode connectivity of mixture-of-experts architectures",
+    "authors": [
+      "Tran",
+      "Trinh",
+      "Bui",
+      "Nguyen"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Linear Mode Connectivity (LMC) is a notable phenomenon in the loss landscapes of neural networks, wherein independently trained models have been observed to be connected–up to permutation symmetries–by linear paths in parameter space along which the loss remains consistently low. This observation challenges classical views of non-convex optimization and has implications for model ensembling, generalization, and our understanding of neural loss geometry. Inspired by recent studies on LMC in standard neural networks, we systematically investigate this phenomenon within Mixture-of-Experts (MoE) architectures–a class of models known for their scalability and computational efficiency, which combine traditional neural networks–referred to as experts–through a learnable gating mechanism. We begin by conducting a comprehensive analysis of both dense and sparse gating regimes, demonstrating that the symmetries inherent to MoE architectures are fully characterized by permutations acting on both the expert components and the gating function. Building on these foundational findings, we propose a matching algorithm that enables alignment between independently trained MoEs, thereby facilitating the discovery of LMC. Finally, we empirically validate the presence of LMC using our proposed algorithm across diverse MoE configurations–including dense, sparse, and shared-expert variants–under a wide range of model settings and datasets of varying scales and modalities. Our results confirm the existence of LMC in MoE architectures and offer fundamental insights into the functional landscape and optimization dynamics of deep learning models. The code is publicly available at https://github.com/MLResearchX/lmc-moe."
+  },
+  {
+    "title": "KVzip: Query-agnostic KV cache compression with context reconstruction",
+    "authors": [
+      "Kim",
+      "Kim",
+      "Kwon",
+      "Lee",
+      "Yun",
+      "Song"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Transformer-based large language models (LLMs) cache context as key-value (KV) pairs during inference. As context length grows, KV cache sizes expand, leading to substantial memory overhead and increased attention latency. This paper introduces KVzip, a query-agnostic KV cache eviction method enabling effective reuse of compressed KV caches across diverse queries. KVzip quantifies the importance of a KV pair using the underlying LLM to reconstruct original contexts from cached KV pairs, subsequently evicting pairs with lower importance. Extensive empirical evaluations demonstrate that KVzip reduces KV cache size by 394× and FlashAttention decoding latency by approximately 2×, with negligible performance loss in question-answering, retrieval, reasoning, and code comprehension tasks. Evaluations include various models such as LLaMA3.1, Qwen2.5, and Gemma3, with context lengths reaching up to 170K tokens. KVzip significantly outperforms existing query-aware KV eviction methods, which suffer from performance degradation even at a 90% cache budget ratio under multi-query scenarios."
+  },
+  {
+    "title": "Hubble: A model suite to advance the study of llm memorization",
+    "authors": [
+      "Wei",
+      "Godbole",
+      "Khan",
+      "Wang",
+      "Zhu",
+      "Flemings",
+      "Kashyap",
+      "Gummadi",
+      "Neiswanger",
+      "Jia"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We present HUBBLE, a suite of fully open-source large language models (LLMs) for the scientific study of LLM memorization. HUBBLE models come in standard and perturbed variants: standard models are pretrained on a large English corpus, and perturbed models are trained in the same way but with controlled insertion of text (e.g., book passages, biographies, and test sets) designed to emulate key memorization risks. Our core release includes 8 models—standard and perturbed models with 1B or 8B parameters, pretrained on 100B or 500B tokens—establishing that memorization risks are determined by the frequency of sensitive data relative to size of the training corpus (i.e., a password appearing once in a smaller corpus is memorized better than the same password in a larger corpus). Our release also includes 6 perturbed models with text inserted at different pretraining phases, showing that sensitive data without continued exposure can be forgotten. These findings suggest two best practices for addressing memorization risks: to dilute sensitive data by increasing the size of the training corpus, and to order sensitive data to appear earlier in training. Beyond these general empirical findings, HUBBLE enables a broad range of memorization research; for example, analyzing the biographies reveals how readily different types of private information are memorized. We also demonstrate that the randomized insertions in HUBBLE make it an ideal testbed for membership inference and machine unlearning, and invite the community to further explore, benchmark, and build upon our work."
+  },
+  {
+    "title": "Autoep: Llms-driven automation of hyperpa- rameter evolution for metaheuristic algo- rithms",
+    "authors": [
+      "Xu",
+      "Zhang",
+      "Wang",
+      "Chen",
+      "Ye",
+      "Jiang",
+      "Yan",
+      "Wang"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Dynamically configuring algorithm hyperparameters is a fundamental challenge in computational intelligence. While learning-based methods offer automation, they suffer from prohibitive sample complexity and poor generalization. We introduce AutoEP, a novel framework that bypasses training entirely by leveraging Large Language Models (LLMs) as zero-shot reasoning engines for algorithm control. AutoEP’s core innovation lies in a tight synergy between two components: (1) an online Exploratory Landscape Analysis (ELA) module that provides real-time, quantitative feedback on the search dynamics, and (2) a multi-LLM reasoning chain that interprets this feedback to generate adaptive hyperparameter strategies. This approach grounds high-level reasoning in empirical data, mitigating hallucination. Evaluated on three distinct metaheuristics across diverse combinatorial optimization benchmarks, AutoEP consistently outperforms state-of-the-art tuners, including neural evolution and other LLM-based methods. Notably, our framework enables open-source models like Qwen3-30B to match the performance of GPT-4, demonstrating a powerful and accessible new paradigm for automated hyperparameter design. Our code is available at https://github.com/YiZheZhang12/AutoEP."
+  },
+  {
+    "title": "Visual planning: Let’s think only with images",
+    "authors": [
+      "Xu",
+      "Li",
+      "Zhou",
+      "Wan",
+      "Zhang",
+      "Korhonen",
+      "Vulic"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Recent advancements in Large Language Models (LLMs) and their multimodal extensions (MLLMs) have substantially enhanced machine reasoning across diverse tasks. However, these models predominantly rely on pure text as the medium for both expressing and structuring reasoning, even when visual information is present. In this work, we argue that language may not always be the most natural or effective modality for reasoning, particularly in tasks involving spatial and geometrical information. Motivated by this, we propose a new paradigm, Visual Planning, which enables planning through purely visual representations for these “vision-first” tasks, as a supplementary channel to language-based reasoning. In this paradigm, planning is executed via sequences of images that encode step-by-step inference in the visual domain, akin to how humans sketch or visualize future actions. We introduce a novel reinforcement learning framework, Visual Planning via Reinforcement Learning (VPRL), empowered by GRPO for post-training large vision models, leading to substantial improvements in planning in a selection of representative visual navigation tasks, FROZENLAKE, MAZE, and MINIBEHAVIOR. Our visual planning paradigm outperforms all other planning variants that conduct reasoning in the text-only space. Our results establish Visual Planning as a viable and promising supplement to language-based reasoning, opening new avenues for tasks that benefit from intuitive, image-based inference. Code is available at: https://github.com/yix8/VisualPlanning."
+  },
+  {
+    "title": "Plug-and-play compositionality for boosting continual learning with foundation models",
+    "authors": [
+      "Liao",
+      "Han",
+      "Ishibuchi",
+      "Zhang",
+      "Wei"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Vision learners often struggle with catastrophic forgetting due to their reliance on class recognition by comparison, rather than understanding classes as compositions of representative concepts. This limitation is prevalent even in state-of-the-art continual learners with foundation models and worsens when current tasks contain few classes. Inspired by the recent success of concept-level understanding in mitigating forgetting, we design a universal framework CompSLOT to guide concept learning across diverse continual learners. Leveraging the progress of object-centric learning in parsing semantically meaningful slots from images, we tackle the challenge of learning slot extraction from ImageNet-pretrained vision transformers by analyzing meaningful concept properties. We further introduce a primitive selection and aggregation mechanism to harness concept-level image understanding. Additionally, we propose a method-agnostic self-supervision approach to distill sample-wise concept-based similarity information into the classifier, reducing reliance on incorrect or partial concepts for classification. Experiments show CompSLOT significantly enhances various continual learners and provides a universal concept-level module for the community1."
+  },
+  {
+    "title": "Memagent: Reshaping long-context llm with multi-conv rl-based memory agent",
+    "authors": [
+      "Yu",
+      "Chen",
+      "Feng",
+      "Chen",
+      "Dai",
+      "Yu",
+      "Zhang",
+      "Ma",
+      "Liu",
+      "Wang",
+      "Zhou"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite improvements by length extrapolation, efﬁcient attention and memory modules, handling inﬁnitely long documents without performance degradation during extrapolation remains the ultimate challenge in long-text processing. To solve this problem, we introduce a novel agent workﬂow, MEMAGENT, which processes text in segments and updates memory through an overwrite strategy, addressing the challenge of long-context task through enhanced memory management. We further extend the DAPO algorithm to directly optimize memory ability in an end-to-end fashion, facilitating training via independent-context multi-conversation generation. Experimental results demonstrate that MEMAGENT has superb long-context capabilities, being able to extrapolate from an 8K context to a 3.5M QA task with a performance loss of less than 10% and achieving over 95% on the 512K NIAH test."
+  },
+  {
+    "title": "Hallucination begins where saliency drops",
+    "authors": [
+      "Zhang",
+      "Zhu",
+      "Gu",
+      "Yuan",
+      "Zhao",
+      "Cao",
+      "Tang",
+      "Fan",
+      "Shen",
+      "Shen",
+      "Tang"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Recent studies have investigated attention dynamics in large vision language models (LVLMs), yet existing methods remain limited in reliably distinguishing hallucinated from correct outputs — primarily because they rely solely on forward-pass attention, ignoring gradient-based signals that reveal how token influence propagates through the model. To bridge this gap, we introduce LVLMs-Saliency, an gradient-aware diagnostic tool that quantifies the grounding strength of each output token by fusing attention weights with their gradients. Through analysis, we identify a decisive pattern: Hallucinations occur when prior output tokens shows low saliency to the next token prediction, indicating a failure of contextual memory. Building on this insight, we propose a dual-mechanism inference-time framework: (1) Saliency-Guided Rejection Sampling (SGRS), which dynamically filters candidate tokens during decoding by rejecting those with saliency below a context-adaptive threshold, thereby preventing coherence-breaking tokens from entering the sequence; and (2) Local Coherence Reinforcement (LocoRE), a lightweight plug-and-play module that strengthens attention from the current token to its most recent outputs, actively counteracting the “forgetting” behavior identified by LVLMs-Saliency. Experimental results demonstrate that our method significantly reduces hallucinations across multiple LVLMs, offering a robust and interpretable solution to improve model reliability. The code can be accessed in https://https://github.com/zhangbaijin/LVLMs-Saliency."
+  },
+  {
+    "title": "Global resolution: Optimal multi-draft spec- ulative sampling via convex minimization",
+    "authors": [
+      "Thomas",
+      "Pal"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Speculative sampling reduces the latency of autoregressive decoding for target model LLMs without sacrificing inference quality, by using a cheap draft model to suggest a candidate token and a verification criterion to accept or resample this token. To improve acceptance and decoding efficiency, recent work has explored the multi-draft extension, where at each step n draft tokens are generated, and the verification criterion is a distribution conditioned on these. When this criterion maximizes the probability of accepting some draft token, it is called the optimal transport (OT). However, finding the OT is difficult, as it is the solution of a linear program (OTLP) in over V n variables, with V being the vocabulary size. Two recent theoretical works have reframed the OTLP in terms of importance sampling or subset selection. In this work, we prove that these formulations are equivalent to an exponentially large relaxed OTLP, so it remains infeasible to solve. Then, we reverse engineer subset selection to formulate the OTLP as a max-flow problem. With a novel application of polymatroid theory, we reduce the exponentially large OTLP to a convex optimization problem in at most V variables. This allows us to devise an algorithm for optimal n-draft speculative sampling when the n tokens are chosen i.i.d. from a single draft model, which can be tuned to arbitrary accuracy. Finally, we measure acceptance rates and algorithm runtimes for various n and top-k draft sampling settings. Our findings give the first multi-draft algorithm with 90% acceptance and under 100 ms of overhead per generated token with negligible deviation from the target model distribution."
+  },
+  {
+    "title": "Verifying chain-of-thought reasoning via its computational graph",
+    "authors": [
+      "Zhao",
+      "Koishekenov",
+      "Yang",
+      "Murray",
+      "Cancedda"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Current Chain-of-Thought (CoT) verification methods predict reasoning correctness based on outputs (black-box) or activations (gray-box), but offer limited insight into why a computation fails. We introduce a white-box method: Circuitbased Reasoning Verification (CRV). We hypothesize that attribution graphs of correct CoT steps, viewed as execution traces of the model’s latent reasoning circuits, possess distinct structural fingerprints from those of incorrect steps. By training a classifier on structural features of these graphs, we show that these traces contain a powerful signal of reasoning errors. Our white-box approach yields novel scientific insights unattainable by other methods. (1) We demonstrate that structural signatures of error are highly predictive, establishing the viability of verifying reasoning directly via its computational graph. (2) We find these signatures to be highly domain-specific, revealing that failures in different reasoning tasks manifest as distinct computational patterns. (3) We provide evidence that these signatures are not merely correlational; by using our analysis to guide targeted interventions on individual transcoder features, we successfully correct the model’s faulty reasoning. Our work shows that, by scrutinizing a model’s computational process, we can move from simple error detection to a deeper, causal understanding of LLM reasoning."
+  },
+  {
+    "title": "Through the lens of contrast: Self-improving visual reasoning in vlms",
+    "authors": [
+      "Pan",
+      "Wu",
+      "Hua",
+      "Feng",
+      "Yan",
+      "Deng",
+      "Cao",
+      "Ye"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Reasoning has emerged as a key capability of large language models. In linguistic tasks, this capability can be enhanced by self-improving techniques that refine reasoning paths for subsequent finetuning. However, extending these language-based self-improving approaches to vision language models (VLMs) presents a unique challenge: visual hallucinations in reasoning paths cannot be effectively verified or rectified. Our solution starts with a key observation about visual contrast: when presented with a contrastive VQA pair, i.e., two visually similar images with synonymous questions, VLMs identify relevant visual cues more precisely. Motivated by this observation, we propose Visual Contrastive Self-Taught Reasoner (VC-STaR), a novel self-improving framework that leverages visual contrast to mitigate hallucinations in model-generated rationales. We collect a diverse suite of VQA datasets, curate contrastive pairs according to multi-modal similarity, and generate rationales using VC-STaR. Consequently, we obtain a new visual reasoning dataset, VisCoR-55K, which is then used to boost the reasoning capability of various VLMs through supervised finetuning. Extensive experiments show that VC-STaR not only outperforms existing self-improving approaches but also surpasses models finetuned on the SoTA visual reasoning datasets, demonstrating that the inherent contrastive ability of VLMs can bootstrap their own visual reasoning. Project at: https://github.com/zhiyupan42/VC-STaR."
+  },
+  {
+    "title": "Thinkv: Thought-adaptive kv cache com- pression for efficient reasoning models",
+    "authors": [
+      "Ramachandran",
+      "Neseem",
+      "Sakr",
+      "Venkatesan",
+      "Khailany",
+      "Krishna"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "The long-output context generation of large reasoning models enables extended chain of thought (CoT) but also drives rapid growth of the key–value (KV) cache, quickly overwhelming GPU memory. To address this challenge, we propose ThinKV 1, a thought-adaptive KV cache compression framework. ThinKV is based on the observation that attention sparsity reveals distinct thought types with varying importance within the CoT. It applies a hybrid quantization–eviction strategy, assigning token precision by thought importance and progressively evicting tokens from less critical thoughts as reasoning trajectories evolve. Furthermore, to implement ThinKV, we design a kernel that extends PagedAttention to enable efficient reuse of evicted tokens’ memory slots, eliminating compaction overheads. Extensive experiments on DeepSeek-R1-Distill, GPT-OSS, and NVIDIA AceReason across mathematics and coding benchmarks show that ThinKV achieves nearlossless accuracy with less than 5% of the original KV cache, while improving performance with up to 5.8× higher inference throughput over SoTA baselines."
+  },
+  {
+    "title": "Temporal sparse autoencoders: Leveraging the sequential nature of language for inter- pretability",
+    "authors": [
+      "Bhalla",
+      "Oesterling",
+      "Verdun",
+      "Lakkaraju",
+      "Calmon"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Translating the internal representations and computations of models into concepts that humans can understand is a key goal of interpretability. While recent dictionary learning methods such as Sparse Autoencoders (SAEs) provide a promising route to discover human-interpretable features, they often only recover tokenspecific, noisy, or highly local concepts. We argue that this limitation stems from neglecting the temporal structure of language, where semantic content typically evolves smoothly over sequences. Building on this insight, we introduce Temporal Sparse Autoencoders (T-SAEs), which incorporate a novel contrastive loss encouraging consistent activations of high-level features over adjacent tokens. This simple yet powerful modification enables SAEs to disentangle semantic from syntactic features in a self-supervised manner. Across multiple datasets and models, T-SAEs recover smoother, more coherent semantic concepts without sacrificing reconstruction quality. Strikingly, they exhibit clear semantic structure despite being trained without explicit semantic signal, offering a new pathway for unsupervised interpretability in language models."
+  },
+  {
+    "title": "Reasoning with sampling: Your base model is smarter than you think",
+    "authors": [
+      "Karan",
+      "Du"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Frontier reasoning models have exhibited incredible capabilities across a wide array of disciplines, driven by posttraining large language models (LLMs) with reinforcement learning (RL). However, despite the widespread success of this paradigm, much of the literature has been devoted to disentangling truly novel behaviors that emerge during RL but are not present in the base models. In our work, we approach this question from a different angle, instead asking whether comparable reasoning capabilities can be elicited from base models at inference time by pure sampling, without any additional training. Inspired by Markov chain Monte Carlo (MCMC) techniques for sampling from sharpened distributions, we propose a simple iterative sampling algorithm leveraging the base models’ own likelihoods. Over different base models, we show that our algorithm offers substantial boosts in reasoning that nearly match and even outperform those from RL on a wide variety of single-shot tasks, including MATH500, HumanEval, and GPQA. Moreover, our sampler avoids the collapse in diversity over multiple samples that is characteristic of RL-posttraining. Crucially, our method does not require training, curated datasets, or a verifier, suggesting broad applicability beyond easily verifiable domains."
+  },
+  {
+    "title": "Mc-search: Evaluating and enhancing multi- modal agentic search with structured long reasoning chains",
+    "authors": [
+      "Ning",
+      "Fu",
+      "Wei",
+      "Ai",
+      "Zou",
+      "Li",
+      "Tong",
+      "Zhu",
+      "Hamann",
+      "He"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "With the increasing demand for step-wise, cross-modal, and knowledge-grounded reasoning, multimodal large language models (MLLMs) are evolving beyond the traditional fixed retrieve-then-generate paradigm toward more sophisticated agentic multimodal retrieval-augmented generation (MM-RAG). Existing benchmarks, however, mainly focus on simplified QA with short retrieval chains, leaving adaptive planning and multimodal reasoning underexplored. We present MC-SEARCH, the first benchmark for agentic MM-RAG with long, step-wise annotated reasoning chains spanning five representative reasoning structures. Each example specifies sub-questions, retrieval modalities, supporting facts, and intermediate answers, with fidelity ensured by HAVE (Hop-wise Attribution and Verification of Evidence), resulting in 3,333 high-quality examples averaging 3.7 hops. Beyond answer accuracy, MC-SEARCH introduces new process-level metrics for reasoning quality, stepwise retrieval and planning accuracy. By developing a unified agentic MM-RAG pipeline, we benchmark six leading MLLMs and reveal systematic issues such as over- and under-retrieval and modality-misaligned planning. Finally, we introduce SEARCH-ALIGN, a process-supervised fine-tuning framework leveraging verified reasoning chains, showing that our data not only enables faithful evaluation but also improves planning and retrieval fidelity in open-source MLLMs."
+  },
+  {
+    "title": "Learning to see before seeing: Demystify- ing llm visual priors from language pre- training",
+    "authors": [
+      "Han",
+      "Tong",
+      "Fan",
+      "Ren",
+      "Sinha",
+      "Torr",
+      "Kokkinos"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs), despite being trained on text alone, surprisingly develop rich visual priors. These priors allow latent visual capabilities to be unlocked for vision tasks with a relatively small amount of multimodal data, andto perform symbolic visual generation tasks without ever having seen an image. Through systematic analysis, we reveal that visual priors—the implicit, emergent knowledge about the visual world acquired during language pre-training—are composed of separable perception and reasoning priors with unique scaling trends and origins. We show that an LLM’s latent visual reasoning ability is predominantly developed by pre-training on reasoning-centric data (e.g., code, math, academia) and scales progressively. This reasoning prior acquired from language pre-training is transferable and universally applicable to visual reasoning. In contrast, the perception prior emerges more diffusely from broad corpora, and perception ability is more sensitive to the vision encoder and visual instruction tuning data. In parallel, text describing the visual world proves crucial, though its performance impact saturates rapidly. Leveraging these insights, we propose a data-centric recipe for pre-training vision-aware LLMs and verify it in 1T token scale pretraining. Our findings are grounded in over 100 controlled experiments consuming 500,000 GPU-hours, spanning the full MLLM construction pipeline—from LLM pre-training to visual alignment and supervised multimodal fine-tuning—across five model scales, a wide range of data categories and mixtures, and multiple adaptation setups. Along with our main findings, we also propose and investigate several hypotheses, and introduce a Multi-Level Existence Bench (MLE-Bench) to facilitate future research. Together, this work provides a new way of deliberately cultivating visual priors from language pre-training, paving the way for the next generation of multimodal LLMs."
+  },
+  {
+    "title": "Is it thinking or cheating? Detecting implicit reward hacking by measuring reasoning effort",
+    "authors": [
+      "Wang",
+      "Joshi",
+      "Plank",
+      "Angell",
+      "He"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Reward hacking, where a reasoning model exploits loopholes in a reward function to achieve high rewards without solving the intended task, poses a significant threat. This behavior may be explicit, i.e. verbalized in the model’s chain-ofthought (CoT), or implicit, where the CoT appears benign thus bypasses CoT monitors. To detect implicit reward hacking, we propose TRACE (Truncated Reasoning AUC Evaluation). Our key observation is that hacking occurs when exploiting the loophole is easier than solving the actual task. This means that the model is using less “effort” than required to achieve high reward. TRACE quantifies effort by measuring how early a model’s reasoning becomes sufficient to obtain the reward. We progressively truncate a model’s CoT at various lengths, force the model to answer, and estimate the expected reward at each cutoff. A hacking model, which takes a shortcut, will achieve a high expected reward with only a small fraction of its CoT, yielding a large area under the reward-vs-length curve. TRACE achieves over 65% gains over our strongest 72B CoT monitor in math reasoning, and over 30% gains over a 32B monitor in coding. We further show that TRACE can discover unknown loopholes during training. Overall, TRACE offers a scalable unsupervised approach for oversight where current monitoring methods prove ineffective."
+  },
+  {
+    "title": "Gaussian certified unlearning in high dimen- sions: A hypothesis testing approach",
+    "authors": [
+      "Pandey",
+      "Auddy",
+      "Zou",
+      "Maleki",
+      "Kulkarni"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Machine unlearning seeks to efficiently remove the influence of selected data while preserving generalization. Significant progress has been made in low dimensions, where the dimension of the parameter p is much smaller than the sample size n, but high dimensions, including proportional regimes p ∼ n, pose serious theoretical challenges as standard optimization assumptions of Ω(1) strong convexity and O(1) smoothness of the per-example loss f rarely hold simultaneously in proportional regimes p ∼ n. In this work, we introduce ε-Gaussian certifiability, a canonical and robust notion well-suited to high-dimensional regimes, that optimally captures a broad class of noise adding mechanisms. Then we theoretically analyze the performance of a widely used unlearning algorithm based on one step of the Newton method in the high-dimensional setting described above. Our analysis shows that a single Newton step, followed by a well-calibrated Gaussian noise, is sufficient to achieve both privacy and accuracy in this setting. This result stands in sharp contrast to the only prior work that analyzes machine unlearning in high dimensions Zou et al. (2025), which relaxes some of the standard optimization assumptions for high-dimensional applicability, but operates under the notion of ε-certifiability. That work concludes that at least two steps are required to ensure both privacy and accuracy. Our result leads us to conclude that the discrepancy in the number of steps arises because of the sub optimality of the notion of ε-certifiability and its incompatibility with noise adding mechanisms, which ε-Gaussian certifiability is able to overcome optimally."
+  },
+  {
+    "title": "Every language model has a forgery-resistant signature",
+    "authors": [
+      "Finlayson",
+      "Ren",
+      "Swayamdipta"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "The ubiquity of closed-weight language models with public-facing APIs has generated interest in forensic methods, both for extracting hidden model details (e.g., parameters) and for identifying models by their outputs. One successful approach to these goals has been to exploit the geometric constraints imposed by the language model architecture and parameters. In this work, we show that a lesser-known geometric constraint—namely, that language model outputs lie on the surface of a high-dimensional ellipse—functions as a signature for the model and can be used to identify the source model of a given output. This ellipse signature has unique properties that distinguish it from existing model-output association methods like language model fingerprints. In particular, the signature is hard to forge: without direct access to model parameters, it is practically infeasible to produce log-probabilities (logprobs) on the ellipse using currently known methods. Secondly, the signature is naturally occurring, since all1 language models have these elliptical constraints. Thirdly, the signature is self-contained, in that it is detectable without access to the model inputs or the full weights. Finally, the signature is compact and redundant, as it is independently detectable in each logprob output from the model. We evaluate a novel technique for extracting the ellipse from small models and discuss the practical hurdles that make it infeasible for production-scale models. Finally, we use ellipse signatures to propose a protocol for language model output verification, analogous to cryptographic symmetric-key message authentication systems."
+  },
+  {
+    "title": "p-LESS SAMPLING: A ROBUST HYPERPARAMETER- FREE APPROACH FOR LLM DECODING",
+    "authors": [
+      "Tan",
+      "Wu",
+      "Howard"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Obtaining high-quality outputs from Large Language Models (LLMs) often depends upon the choice of a sampling-based decoding strategy to probabilistically choose the next token at each generation step. While a variety of such sampling methods have been proposed, their performance can be sensitive to the selection of hyperparameters which may require different settings depending upon the generation task and temperature configuration. In this work, we introduce p-less sampling: an information-theoretic approach to sampling which dynamically sets a truncation threshold at each decoding step based on the entire token probability distribution. Unlike existing methods, p-less sampling has no hyperparameters and consistently produces high-quality outputs as temperature increases. We provide theoretical perspectives on p-less sampling to ground our proposed method and conduct experiments to empirically validate its effectiveness across a range of math, logical reasoning, and creative writing tasks. Our results demonstrate how p-less sampling consistently outperforms existing sampling approaches while exhibiting much less degradation in text quality at higher temperature values. We further show how p-less achieves greater inference-time efficiency than alternative methods through lower average token sampling times and shorter generation lengths, without sacrificing accuracy. Finally, we provide analyses to highlight the benefits of p-less through qualitative examples, case studies, and diversity assessments. The code is available at §."
+  },
+  {
+    "title": "World-in-world: World models in a closed- loop world",
+    "authors": [
+      "Zhang",
+      "Jiang",
+      "Dai",
+      "Lu",
+      "Uzunoglu",
+      "Zhang",
+      "Wei",
+      "Wang",
+      "Patel",
+      "Liang",
+      "Khashabi",
+      "Peng",
+      "Chellappa",
+      "Shu",
+      "Yuille",
+      "Du",
+      "Chen"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Generative world models (WMs) can now simulate worlds with striking visual realism, which naturally raises the question of whether they can endow embodied agents with predictive perception for decision making. Progress on this question has been limited by fragmented evaluation: most existing benchmarks adopt openloop protocols that emphasize visual quality in isolation, leaving the core issue of embodied utility unresolved, i.e., do WMs actually help agents succeed at embodied tasks? To address this gap, we introduce World-In-World, the first open platform that benchmarks WMs in a closed-loop world that mirrors real agent-environment interactions. World-In-World provides a unified online planning strategy and a standardized action API, enabling heterogeneous WMs for decision making. We curate four closed-loop environments that rigorously evaluate diverse WMs, prioritize task success as the primary metric, and move beyond the common focus on visual quality; we also present the first data scaling law for world models in embodied settings. Our study uncovers three surprises: (1) visual quality alone does not guarantee task success—controllability matters more; (2) scaling posttraining with action-observation data is more effective than upgrading the pretrained video generators; and (3) allocating more inference-time compute allows WMs to substantially improve closed-loop performance. By centering evaluation on closedloop outcomes, World-In-World establishes a new benchmark for the systematic assessment of WMs."
+  },
+  {
+    "title": "Sequences of logits reveal the low rank structure of language models",
+    "authors": [
+      "Golowich",
+      "Liu",
+      "Shetty"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "A major problem in the study of large language models is to understand their inherent low-dimensional structure. We introduce an approach to study the lowdimensional structure of language models at a model-agnostic level: as sequential probabilistic models. We first empirically demonstrate that a wide range of modern language models exhibit low-rank structure: in particular, matrices built from the model’s logits for varying sets of prompts and responses have low approximate rank. We then show that this low-rank structure can be leveraged for generation — in particular, we can generate a response to a target prompt using a linear combination of the model’s outputs on unrelated, or even nonsensical prompts."
+  },
+  {
+    "title": "Rain-merging: A gradient-free method to en- hance instruction following in large reason- ing models with preserved thinking format",
+    "authors": [
+      "Huang",
+      "Liu",
+      "Lin",
+      "Lou",
+      "He",
+      "Tian",
+      "Li",
+      "Huang"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large reasoning models (LRMs) excel at a long chain of reasoning but often fail to faithfully follow instructions regarding output format, constraints, or specific requirements. We investigate whether this gap can be closed by integrating an instruction-tuned model (ITM) into an LRM. Analyzing their differences in parameter space, namely task vectors, we find that their principal subspaces are nearly orthogonal across key modules, suggesting a lightweight merging with minimal interference. However, we also demonstrate that naïve merges are fragile because they overlook the output format mismatch between LRMs (with explicit thinking and response segments) and ITMs (answers-only). We introduce RAIN-Merging (Reasoning-Aware Instruction-attention guided Null-space projection Merging), a gradient-free method that integrates instruction following while preserving thinking format and reasoning performance. First, with a small reasoning calibration set, we project the ITM task vector onto the null space of forward features at thinking special tokens, which preserves the LRM’s structured reasoning mechanisms. Second, using a small instruction calibration set, we estimate instruction attention to derive module-specific scaling that amplifies instruction-relevant components and suppresses leakage. Across four instruction-following benchmarks and nine reasoning & general capability benchmarks, RAIN-Merging substantially improves instruction adherence while maintaining reasoning quality. The gains are consistent across model scales and architectures, translating to improved performance in agentic scenarios. Code is available at https://github.com/K1nght/RAIN-Merging."
+  },
+  {
+    "title": "p-LESS SAMPLING: A ROBUST HYPERPARAMETER- FREE APPROACH FOR LLM DECODING",
+    "authors": [
+      "Tan",
+      "Wu",
+      "Howard"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Obtaining high-quality outputs from Large Language Models (LLMs) often depends upon the choice of a sampling-based decoding strategy to probabilistically choose the next token at each generation step. While a variety of such sampling methods have been proposed, their performance can be sensitive to the selection of hyperparameters which may require different settings depending upon the generation task and temperature configuration. In this work, we introduce p-less sampling: an information-theoretic approach to sampling which dynamically sets a truncation threshold at each decoding step based on the entire token probability distribution. Unlike existing methods, p-less sampling has no hyperparameters and consistently produces high-quality outputs as temperature increases. We provide theoretical perspectives on p-less sampling to ground our proposed method and conduct experiments to empirically validate its effectiveness across a range of math, logical reasoning, and creative writing tasks. Our results demonstrate how p-less sampling consistently outperforms existing sampling approaches while exhibiting much less degradation in text quality at higher temperature values. We further show how p-less achieves greater inference-time efficiency than alternative methods through lower average token sampling times and shorter generation lengths, without sacrificing accuracy. Finally, we provide analyses to highlight the benefits of p-less through qualitative examples, case studies, and diversity assessments. The code is available at §."
+  },
+  {
+    "title": "Llms get lost in multi-turn conversation",
+    "authors": [
+      "Laban",
+      "Hayashi",
+      "Zhou",
+      "Neville"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs) are conversational interfaces. As such, LLMs have the potential to assist their users not only when they can fully specify the task at hand, but also to help them define, explore, and refine what they need through multi-turn conversational exchange. Although analysis of LLM conversation logs has confirmed that underspecification occurs frequently in user instructions, LLM evaluation has predominantly focused on the single-turn, fully-specified instruction setting. In this work, we perform large-scale simulation experiments to compare LLM performance in single- and multi-turn settings. Our experiments confirm that all the top open- and closed-weight LLMs we test exhibit significantly lower performance in multi-turn conversations than single-turn, with an average drop of 39% across six generation tasks. Analysis of 200,000+ simulated conversations decomposes the performance degradation into two components: a minor loss in aptitude and a significant increase in unreliability. We find that LLMs often make assumptions in early turns and prematurely attempt to generate final solutions, on which they overly rely. In simpler terms, we discover that when LLMs take a wrong turn in a conversation, they get lost and do not recover."
+  },
+  {
+    "title": "Learning to see before seeing: Demystify- ing llm visual priors from language pre- training",
+    "authors": [
+      "Han",
+      "Tong",
+      "Fan",
+      "Ren",
+      "Sinha",
+      "Torr",
+      "Kokkinos"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs), despite being trained on text alone, surprisingly develop rich visual priors. These priors allow latent visual capabilities to be unlocked for vision tasks with a relatively small amount of multimodal data, andto perform symbolic visual generation tasks without ever having seen an image. Through systematic analysis, we reveal that visual priors—the implicit, emergent knowledge about the visual world acquired during language pre-training—are composed of separable perception and reasoning priors with unique scaling trends and origins. We show that an LLM’s latent visual reasoning ability is predominantly developed by pre-training on reasoning-centric data (e.g., code, math, academia) and scales progressively. This reasoning prior acquired from language pre-training is transferable and universally applicable to visual reasoning. In contrast, the perception prior emerges more diffusely from broad corpora, and perception ability is more sensitive to the vision encoder and visual instruction tuning data. In parallel, text describing the visual world proves crucial, though its performance impact saturates rapidly. Leveraging these insights, we propose a data-centric recipe for pre-training vision-aware LLMs and verify it in 1T token scale pretraining. Our findings are grounded in over 100 controlled experiments consuming 500,000 GPU-hours, spanning the full MLLM construction pipeline—from LLM pre-training to visual alignment and supervised multimodal fine-tuning—across five model scales, a wide range of data categories and mixtures, and multiple adaptation setups. Along with our main findings, we also propose and investigate several hypotheses, and introduce a Multi-Level Existence Bench (MLE-Bench) to facilitate future research. Together, this work provides a new way of deliberately cultivating visual priors from language pre-training, paving the way for the next generation of multimodal LLMs."
+  },
+  {
+    "title": "Intrinsic entropy of context length scaling in llms",
+    "authors": [
+      "Shi",
+      "Ma",
+      "Liu",
+      "Zhao",
+      "Hwang",
+      "Li"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Generative universal verifier as multimodal meta-reasoner",
+    "authors": [
+      "Zhang",
+      "Zhang",
+      "Wu",
+      "Cao",
+      "Zhang",
+      "Chu",
+      "Yang",
+      "Yang",
+      "Shi"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We introduce Generative Universal Verifier, a novel concept and plugin designed for next-generation multimodal reasoning in vision-language models and unified multimodal models, providing the fundamental capability of reflection and refinement on visual outcomes during the reasoning and generation process. This work makes three main contributions: (1) We build ViVerBench, a comprehensive benchmark spanning 16 categories of critical tasks for evaluating visual outcomes in multimodal reasoning. Results show that existing VLMs consistently underperform across these tasks, underscoring a substantial gap from human-level capability in reliable visual verification. (2) We design two automated pipelines to construct large-scale visual verification data and train OmniVerifier-7B, the first omni-capable generative verifier trained for universal visual verification and achieves notable gains on ViVerBench(+8.3). Through training, we identify three atomic capabilities in visual verification and demonstrate how they generalize and interact synergistically. (3) We propose OmniVerifier-TTS, a sequential test-time scaling paradigm that leverages the universal verifier to bridge image generation and editing within unified models, enhancing the upper bound of generative ability through iterative fine-grained optimization. Beyond generation, we extend universal verifier to broader world-modeling interleaved reasoning scenarios. Empirically, OmniVerifier-TTS achieves improvements on T2I-ReasonBench(+3.7), and GenEval++(+4.3), outperforming existing parallel test-time scaling methods, such as Best-of-N. By endowing multimodal reasoning with reliable visual verification, OmniVerifier advances both reliable reflection during generation and scalable testtime refinement, marking a step toward more trustworthy and controllable nextgeneration reasoning systems."
+  },
+  {
+    "title": "Addressing divergent representations from causal interventions on neural networks",
+    "authors": [
+      "Grant",
+      "Han",
+      "Tartaglini",
+      "Potts"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Unlocking the capabilities of thought: A reasoning boundary framework to quantify and optimize chain-of-thought",
+    "authors": [
+      "Chen",
+      "Qin",
+      "Wang",
+      "Zhou",
+      "Che"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Chain-of-Thought (CoT) reasoning has emerged as a promising approach for enhancing the performance of large language models (LLMs) on complex reasoning tasks. Recently, a series of studies attempt to explain the mechanisms underlying CoT, aiming to deepen the understanding of its efficacy. Nevertheless, the existing research faces two major challenges: (1) a lack of quantitative metrics to assess CoT capabilities and (2) a dearth of guidance on optimizing CoT performance. Motivated by this, in this work, we introduce a novel reasoning boundary framework (RBF) to address these challenges. To solve the lack of quantification, we first define a reasoning boundary (RB) to quantify the upper-bound of CoT and establish a combination law for RB, enabling a practical quantitative approach applicable to various real-world CoT tasks. To address the lack of optimization, we propose three categories of RBs. We further optimize these categories with combination laws focused on RB promotion and reasoning path optimization for CoT improvement. Through extensive experiments on 27 models and 5 tasks, the study validates the existence and rationality of the proposed framework. Furthermore, it explains the effectiveness of 10 CoT strategies and guides optimization from two perspectives. We hope this work can provide a comprehensive understanding of the boundaries and optimization strategies for reasoning in LLMs. Our code and data are available at https://github.com/LightChen233/reasoning-boundary."
+  },
+  {
+    "title": "Patterns over principles: The fragility of inductive reasoning in LLMs under noisy observations",
+    "authors": [
+      "Li",
+      "Wang",
+      "Zheng",
+      "Song"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Inductive reasoning, a cornerstone of human cognition, enables generalization from limited data but hasn’t yet been fully achieved by large language models (LLMs). While modern LLMs excel at reasoning tasks, their ability to maintain stable and consistent rule abstraction under imperfect observations remains underexplored. To fill this gap, in this work, we introduce Robust Rule Induction, a task that evaluates LLMs’ capability in inferring rules from data that are fused with noisy examples. To address this task, we further propose Sample-steered Rule Refinement (SRR), a method enhancing reasoning stability via observation diversification and execution-guided feedback. Experiments across arithmetic, cryptography, and list functions reveal: (1) SRR outperforms other methods with minimal performance degradation under noise; (2) Despite slight accuracy variation, LLMs exhibit instability under noise (e.g., 0% accuracy change with only 70% consistent score); (3) Counterfactual task gaps highlight LLMs’ reliance on memorized patterns over genuine abstraction. Our findings challenge LLMs’ reasoning robustness, revealing susceptibility to hypothesis drift and pattern overfitting, while providing empirical evidence critical for developing human-like inductive systems. Code and data are available at https://github.com/HKUSTKnowComp/Robust-Rule-Induction."
+  },
+  {
+    "title": "Can language models perform robust reasoning in chain-of-thought prompting with noisy rationales?",
+    "authors": [
+      "Zhou",
+      "Tao",
+      "Zhu",
+      "Luo",
+      "Wang",
+      "Han"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "This paper investigates an under-explored challenge in large language models (LLMs): chain-of-thought prompting with noisy rationales, which include irrelevant or inaccurate reasoning thoughts within examples used for in-context learning. We construct NoRa dataset that is tailored to evaluate the robustness of reasoning in the presence of noisy rationales. Our findings on NoRa dataset reveal a prevalent vulnerability to such noise among current LLMs, with existing robust methods like self-correction and self-consistency showing limited efficacy. Notably, compared to prompting with clean rationales, GPT-3.5 drops by 1.4%-19.8% in accuracy with irrelevant thoughts and more drastically by 2.2%-40.4% with inaccurate thoughts. Addressing this challenge necessitates external supervision that should be accessible in practice. Here, we propose the method of contrastive denoising with noisy chain-of-thought (CD-CoT). It enhances LLMs’ denoising-reasoning capabilities by contrasting noisy rationales with only one clean rationale, which can be the minimal requirement for denoising-purpose prompting. This method follows a principle of exploration and exploitation: (1) rephrasing and selecting rationales in the input space to achieve explicit denoising and (2) exploring diverse reasoning paths and voting on answers in the output space. Empirically, CD-CoT demonstrates an average improvement of 17.8% in accuracy over the base model and shows significantly stronger denoising capabilities than baseline methods. The source code is publicly available at: https://github.com/tmlr-group/NoisyRationales."
+  },
+  {
+    "title": "Bounds of chain-of-thought robustness: Reasoning steps, embed norms, and beyond",
+    "authors": [
+      "Wang",
+      "Zhang",
+      "Xu",
+      "Zhu",
+      "Che",
+      "Deng"
+    ],
+    "year": "2026",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Existing research indicates that the output of Chain-of-Thought (CoT) is significantly affected by input perturbations. Although many methods aim to mitigate such impact by optimizing prompts, a theoretical explanation of how these perturbations influence CoT outputs remains an open area of research. This gap limits our in-depth understanding of how input perturbations propagate during the reasoning process and hinders further improvements in prompt optimization methods. Therefore, in this paper, we theoretically analyze the effect of input perturbations on the fluctuation of CoT outputs. We first derive an upper bound for input perturbations under the condition that the output fluctuation is within an acceptable range, based on which we prove that: (i) This upper bound is positively correlated with the number of reasoning steps in the CoT; (ii) Even an infinitely long reasoning process cannot eliminate the impact of input perturbations. We then apply these conclusions to the Linear Self-Attention (LSA) model, which can be viewed as a simplified version of the Transformer. For the LSA model, we prove that the upper bound for input perturbation is negatively correlated with the norms of the input embedding and hidden state vectors. To validate this theoretical analysis, we conduct experiments on three mainstream datasets and four mainstream models. The experimental results align with our theoretical analysis, empirically demonstrating the correctness of our findings."
+  },
+  {
+    "title": "Treatment of statistical estimation problems in randomized smoothing for adversarial robustness",
+    "authors": [
+      "Vorácˇek"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Randomized smoothing is a popular certified defense against adversarial attacks. In its essence, we need to solve a problem of statistical estimation which is usually very time-consuming since we need to perform numerous (usually 105) forward passes of the classifier for every point to be certified. In this paper, we review the statistical estimation problems for randomized smoothing to find out if the computational burden is necessary. In particular, we consider the (standard) task of adversarial robustness where we need to decide if a point is robust at a certain radius or not using as few samples as possible while maintaining statistical guarantees. We present estimation procedures employing confidence sequences enjoying the same statistical guarantees as the standard methods, with the optimal sample complexities for the estimation task and empirically demonstrate their good performance. Additionally, we provide a randomized version of Clopper-Pearson confidence intervals resulting in strictly stronger certificates. The code can be found at https://github.com/vvoracek/RS_conf_seq."
+  },
+  {
+    "title": "Average certified radius is a poor metric for randomized smoothing",
+    "authors": [
+      "Sun",
+      "Mao",
+      "Müller",
+      "Vechev"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Randomized smoothing (RS) is popular for providing certified robustness guarantees against adversarial attacks. The average certified radius (ACR) has emerged as a widely used metric for tracking progress in RS. However, in this work, for the first time we show that ACR is a poor metric for evaluating robustness guarantees provided by RS. We theoretically prove not only that a trivial classifier can have arbitrarily large ACR, but also that ACR is extremely sensitive to improvements on easy samples. In addition, the comparison using ACR has a strong dependence on the certification budget. Empirically, we confirm that existing training strategies, though improving ACR, reduce the model’s robustness on hard samples consistently. To strengthen our findings, we propose strategies, including explicitly discarding hard samples, reweighing the dataset with approximate certified radius, and extreme optimization for easy samples, to replicate the progress in RS training and even achieve the state-of-the-art ACR on CIFAR-10, without training for robustness on the full data distribution. Overall, our results suggest that ACR has introduced a strong undesired bias to the field, and its application should be discontinued in RS. Finally, we suggest using the empirical distribution of pA, the accuracy of the base model on noisy data, as an alternative metric for RS."
+  },
+  {
+    "title": "Robust representation consistency model via contrastive denoising",
+    "authors": [
+      "Lei",
+      "Berner",
+      "Wang",
+      "Chen",
+      "Ren",
+      "Zhu",
+      "Anandkumar"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Robustness is essential for deep neural networks, especially in security-sensitive applications. To this end, randomized smoothing provides theoretical guarantees for certifying robustness against adversarial perturbations. Recently, diffusion models have been successfully employed for randomized smoothing to purify noise-perturbed samples before making predictions with a standard classifier. While these methods excel at small perturbation radii, they struggle with larger perturbations and incur a significant computational overhead during inference compared to classical methods. To address this, we reformulate the generative modeling task along the diffusion trajectories in pixel space as a discriminative task in the latent space. Specifically, we use instance discrimination to achieve consistent representations along the trajectories by aligning temporally adjacent points. After fine-tuning based on the learned representations, our model enables implicit denoising-then-classification via a single prediction, substantially reducing inference costs. We conduct extensive experiments on various datasets and achieve state-of-the-art performance with minimal computation budget during inference. For example, our method outperforms the certified accuracy of diffusionbased methods on ImageNet across all perturbation radii by 5.3% on average, with up to 11.6% at larger radii, while reducing inference costs by 85× on average. Codes are available at: https://github.com/jiachenlei/rRCM."
+  },
+  {
+    "title": "Certifying LLM safety against adversarial prompting",
+    "authors": [
+      "Kumar",
+      "Agarwal",
+      "Srinivas",
+      "Li",
+      "Feizi",
+      "Lakkaraju"
+    ],
+    "year": "2024",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Certiﬁed robustness via locally biased randomized smoothing",
+    "authors": [
+      "Anderson",
+      "Sojoudi"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "The successful incorporation of machine learning models into safety-critical control systems requires rigorous robustness guarantees. Randomized smoothing remains one of the state-of-the-art methods for robustiﬁcation with theoretical guarantees. We show that using uniform and unbiased smoothing measures, as is standard in the literature, relies on the underlying assumption that smooth decision boundaries yield good robustness, which manifests into a robustness-accuracy tradeoff. We generalize the smoothing framework to remove this assumption and learn a locally optimal robustiﬁcation of the decision boundary based on training data, a method we term locally biased randomized smoothing. We prove nontrivial closed-form certiﬁed robust radii for the resulting model, avoiding Monte Carlo certiﬁcations as used by other smoothing methods. Experiments on synthetic, MNIST, and CIFAR-10 data show a notable increase in the certiﬁed radii and accuracy over conventional smoothing."
+  },
+  {
+    "title": "SmoothLLM: Defending large language models against jailbreaking attacks",
+    "authors": [
+      "Robey",
+      "Wong",
+      "Hassani",
+      "Pappas"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite efforts to align large language models (LLMs) with human intentions, widely-used LLMs such as GPT, Llama, and Claude are susceptible to jailbreaking attacks, wherein an adversary fools a targeted LLM into generating objectionable content. To address this vulnerability, we propose SmoothLLM, an algorithm designed to mitigate jailbreaking attacks. Based on our finding that adversarially-generated prompts are brittle to characterlevel changes, our defense randomly perturbs multiple copies of a given input prompt, and then aggregates the corresponding predictions to detect adversarial inputs. Across a range of popular LLMs, SmoothLLM offers improved robustness against the GCG, PAIR, RandomSearch, and AmpleGCG jailbreaks. SmoothLLM is also resistant against adaptive GCG attacks, exhibits a small, though non-negligible trade-off between robustness and nominal performance, and is compatible with any LLM."
+  },
+  {
+    "title": "Machine Learning and Deep Learning in Synthetic Biology: Key Architectures, Applications, and Challenges",
+    "authors": [
+      "Goshisht"
+    ],
+    "year": "2024-03-05",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://pubs.acs.org/doi/10.1021/acsomega.3c05913",
+    "abstract": "Machine learning (ML), particularly deep learning (DL), has made rapid and substantial progress in synthetic biology in recent years. Biotechnological applications of biosystems, including pathways, enzymes, and whole cells, are being probed frequently with time. The intricacy and interconnectedness of biosystems make it challenging to design them with the desired properties. ML and DL have a synergy with synthetic biology. Synthetic biology can be employed to produce large data sets for training models (for instance, by utilizing DNA synthesis), and ML/DL models can be employed to inform design (for example, by generating new parts or advising unrivaled experiments to perform). This potential has recently been brought to light by research at the intersection of engineering biology and ML/DL through achievements like the design of novel biological components, best experimental design, automated analysis of microscopy data, protein structure prediction, and biomolecular implementations of ANNs (Artificial Neural Networks). I have divided this review into three sections. In the first section, I describe predictive potential and basics of ML along with myriad applications in synthetic biology, especially in engineering cells, activity of proteins, and metabolic pathways. In the second section, I describe fundamental DL architectures and their applications in synthetic biology. Finally, I describe different challenges causing hurdles in the progress of ML/DL and synthetic biology along with their solutions."
+  },
+  {
+    "title": "Integration of Artificial Intelligence, Machine Learning and Deep Learning Techniques in Genomics: Review on Computational Perspectives for NGS Analysis of DNA and RNA Seq Data",
+    "authors": [
+      "K.",
+      "Niranjan",
+      "Vishal",
+      "Setlur"
+    ],
+    "year": "11/2024",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://www.eurekaselect.com/225983/article",
+    "abstract": ":\n              In the current state of genomics and biomedical research, the utilization of Artificial Intelligence\n(AI), Machine Learning (ML) and Deep Learning (DL) have emerged as paradigm shifters.\nWhile traditional NGS DNA and RNA sequencing analysis pipelines have been sound in decoding\ngenetic information, the sequencing data’s volume and complexity have surged. There is a demand\nfor more efficient and accurate methods of analysis. This has led to dependency on AI/ML and DL\napproaches. This paper highlights these tool approaches to ease combat the limitations and generate\nbetter results, with the help of pipeline automation and integration of these tools into the NGS DNA\nand RNA-seq pipeline we can improve the quality of research as large data sets can be processed using\nDeep Learning tools. Automation helps reduce labor-intensive tasks and helps researchers to focus\non other frontiers of research. In the traditional pipeline all tasks from quality check to the variant\nidentification in the case of SNP detection take a huge amount of computational time and manually\nthe researcher has to input codes to prevent manual human errors, but with the power of automation,\nwe can run the whole process in comparatively lesser time and smoother as the automated pipeline\ncan run for multiple files instead of the one single file observed in the traditional pipeline. In conclusion,\nthis review paper sheds light on the transformative impact of DL's integration into traditional\npipelines and its role in optimizing computational time. Additionally, it highlights the growing importance\nof AI-driven solutions in advancing genomics research and enabling data-intensive biomedical\napplications."
+  },
+  {
+    "title": "From tradition to innovation: conventional and deep learning frameworks in genome annotation",
+    "authors": [
+      "Chen",
+      "Ain",
+      "Zhao",
+      "Zhang"
+    ],
+    "year": "2024-03-27",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://academic.oup.com/bib/article/doi/10.1093/bib/bbae138/7640738",
+    "abstract": "Abstract\n            Following the milestone success of the Human Genome Project, the ‘Encyclopedia of DNA Elements (ENCODE)’ initiative was launched in 2003 to unearth information about the numerous functional elements within the genome. This endeavor coincided with the emergence of numerous novel technologies, accompanied by the provision of vast amounts of whole-genome sequences, high-throughput data such as ChIP-Seq and RNA-Seq. Extracting biologically meaningful information from this massive dataset has become a critical aspect of many recent studies, particularly in annotating and predicting the functions of unknown genes. The core idea behind genome annotation is to identify genes and various functional elements within the genome sequence and infer their biological functions. Traditional wet-lab experimental methods still rely on extensive efforts for functional verification. However, early bioinformatics algorithms and software primarily employed shallow learning techniques; thus, the ability to characterize data and features learning was limited. With the widespread adoption of RNA-Seq technology, scientists from the biological community began to harness the potential of machine learning and deep learning approaches for gene structure prediction and functional annotation. In this context, we reviewed both conventional methods and contemporary deep learning frameworks, and highlighted novel perspectives on the challenges arising during annotation underscoring the dynamic nature of this evolving scientific landscape."
+  },
+  {
+    "title": "Randomized smoothing meets vision-language models",
+    "authors": [
+      "Seferis",
+      "Wu",
+      "Kollias",
+      "Bensalem",
+      "Cheng"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Randomized smoothing (RS) is one of the prominent techniques to ensure the correctness of machine learning models, where point-wise robustness certificates can be derived analytically. While RS is well understood for classification, its application to generative models is unclear, since their outputs are sequences rather than labels. We resolve this by connecting generative outputs to an oracle classification task and showing that RS can still be enabled: the final response can be classified as a discrete action (e.g., service-robot commands in VLAs), as harmful vs. harmless (content moderation or toxicity detection in VLMs), or even applying oracles to cluster answers into semantically equivalent ones. Provided that the error rate for the oracle classifier comparison is bounded, we develop the theory that associates the number of samples with the corresponding robustness radius. We further derive improved scaling laws analytically relating the certified radius and accuracy to the number of samples, showing that the earlier result of 2 to 3 orders of magnitude fewer samples sufficing with minimal loss remains valid even under weaker assumptions. Together, these advances make robustness certification both well-defined and computationally feasible for state-of-the-art VLMs, as validated against recent jailbreak-style adversarial attacks."
+  },
+  {
+    "title": "Adaptive randomized smoothing: Certified adversarial robustness for multi-step defences",
+    "authors": [
+      "Lyu",
+      "Shaikh",
+      "Shpilevskiy",
+      "Shelhamer",
+      "Lécuyer"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We propose Adaptive Randomized Smoothing (ARS) to certify the predictions of our test-time adaptive models against adversarial examples. ARS extends the analysis of randomized smoothing using f -Differential Privacy to certify the adaptive composition of multiple steps. For the first time, our theory covers the sound adaptive composition of general and high-dimensional functions of noisy inputs. We instantiate ARS on deep image classification to certify predictions against adversarial examples of bounded L∞ norm. In the L∞ threat model, ARS enables flexible adaptation through high-dimensional inputdependent masking. We design adaptivity benchmarks, based on CIFAR-10 and CelebA, and show that ARS improves standard test accuracy by 1 to 15% points. On ImageNet, ARS improves certified test accuracy by up to 1.6% points over standard RS without adaptivity. Our code is available at https: //github.com/ubc-systopia/adaptive-randomized-smoothing."
+  },
+  {
+    "title": "A principled approach to randomized selection under uncertainty: Applications to peer review and grant funding",
+    "authors": [
+      "Goldberg",
+      "Fanti",
+      "Shah"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Many decision-making processes involve evaluating and selecting items, including scientific peer review, job hiring, school admissions, and investment decisions. These domains feature error-prone evaluations and uncertainty about outcomes, which undermine deterministic selection rules. Consequently, randomized selection mechanisms are gaining traction. However, current randomized approaches are ad hoc and, as we prove, inappropriate for their purported objectives. We propose a principled framework for randomized decision-making based on interval estimates of item quality. We introduce MERIT (Maximin Efficient Randomized Interval Top-k), which maximizes the worst-case expected number of top candidates selected under uncertainty represented by overlapping intervals. MERIT provides optimal resource allocation under an interpretable robustness notion. We develop a polynomial-time, practically efficient algorithm and prove our approach satisfies desirable axiomatic properties not guaranteed by existing methods. Experiments on synthetic peer review data from grant funding and conferences demonstrate that MERIT matches existing algorithms’ expected utility under fully probabilistic models while outperforming them under our worst-case formulation."
+  },
+  {
+    "title": "Abstract rendering: Certified rendering under 3D semantic uncertainty",
+    "authors": [
+      "Ji",
+      "Li",
+      "Zhong",
+      "Zhang",
+      "Mitra"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Rendering produces 2D images from 3D scene representations, yet how continuous variations in camera pose and scenes influence these images—and, consequently, downstream visual models—remains underexplored. We introduce abstract rendering, a framework that computes provable bounds on all images rendered under continuously varying camera poses and scenes. The resulting abstract image, expressed as a set of constraints over the image matrix, enables rigorous uncertainty propagation through downstream neural networks and thereby supports certification of model behavior under realistic 3D semantic perturbations, far beyond traditional pixel-level noise models. Our approach propagates camera pose uncertainty through each rendering step using efficient piecewise linear bounds, including custom abstractions for three rendering-specific operations—matrix inversion, sorting-based aggregation, and cumulative product summation—not supported by standard tools. Our implementation, ABSTRACTRENDER, targets two state-of-the-art photorealistic scene representations—3D Gaussian Splats and Neural Radiance Fields (NeRF)—and scales to complex scenes with up to 1M Gaussians. Our computed abstract images achieve up to 3% over-approximation error compared to sampling results (baseline). Through experiments on classification (ResNet), object detection (YOLO), and pose estimation (GATENet) tasks, we demonstrate that abstract rendering enables formal certification of downstream models under realistic 3D variations—an essential step toward safety-critical vision systems."
+  },
+  {
+    "title": "Turning up the heat: Min-p sampling for creative and coherent llm outputs",
+    "authors": [
+      "Minh",
+      "Baker",
+      "Neo",
+      "Roush",
+      "Kirsch",
+      "Shwartz-Ziv"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs) generate text by sampling the next token from a probability distribution over the vocabulary at each decoding step. However, popular sampling methods like top-p (nucleus sampling) often struggle to balance quality and diversity, especially at higher temperatures, leading to incoherent or repetitive outputs. To address this challenge, we propose min-p sampling, a dynamic truncation method that adjusts the sampling threshold based on the model’s confidence by scaling according to the top token’s probability. We conduct extensive experiments on benchmarks including GPQA, GSM8K, and AlpacaEval Creative Writing, demonstrating that min-p sampling improves both the quality and diversity of generated text, particularly at high temperatures. Moreover, human evaluations reveal a clear preference for min-p sampling in terms of both text quality and diversity. Min-p sampling has been adopted by multiple open-source LLM implementations, highlighting its practical utility and potential impact."
+  },
+  {
+    "title": "Don’t take things out of context: Atten- tion intervention for enhancing chain-of- thought reasoning in large language mod-",
+    "authors": [
+      "Yan",
+      "Shen",
+      "Wang",
+      "Xie",
+      "Liu",
+      "Ye"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Few-shot Chain-of-Thought (CoT) significantly enhances the reasoning capabilities of large language models (LLMs), functioning as a whole to guide these models in generating reasoning steps toward final answers. However, we observe that isolated segments, words, or tokens within CoT demonstrations can unexpectedly disrupt the generation process of LLMs. The model may overly concentrate on certain local information present in the demonstration, introducing irrelevant noise into the reasoning process and potentially leading to incorrect answers. In this paper, we investigate the underlying mechanism of CoT through dynamically tracing and manipulating the inner workings of LLMs at each output step, which demonstrates that tokens exhibiting specific attention characteristics are more likely to induce the model to take things out of context; these tokens directly attend to the hidden states tied with prediction, without substantial integration of non-local information. Building upon these insights, we propose a Few-shot Attention Intervention method (FAI) that dynamically analyzes the attention patterns of demonstrations to accurately identify these tokens and subsequently make targeted adjustments to the attention weights to effectively suppress their distracting effect on LLMs. Comprehensive experiments across multiple benchmarks demonstrate consistent improvements over baseline methods, with a remarkable 5.91% improvement on the AQuA dataset, further highlighting the effectiveness of FAI."
+  },
+  {
+    "title": "Latent space chain-of-embedding enables output-free llm self-evaluation",
+    "authors": [
+      "Wang",
+      "Zhang",
+      "Yang",
+      "Wong",
+      "Wang"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "LLM self-evaluation relies on the LLM’s own ability to estimate response correctness, which can greatly improve its deployment reliability. In this research track, we propose the Chain-of-Embedding (CoE) in the latent space to enable LLMs to perform output-free self-evaluation. CoE consists of all progressive hidden states produced during the inference time, which can be treated as the latent thinking path of LLMs. We find that when LLMs respond correctly and incorrectly, their CoE features differ, these discrepancies assist us in estimating LLM response correctness. Experiments in four diverse domains and seven LLMs fully demonstrate the effectiveness of our method. Meanwhile, its label-free design intent without any training and millisecond-level computational cost ensures real-time feedback in large-scale scenarios. More importantly, we provide interesting insights into LLM response correctness from the perspective of hidden state changes inside LLMs. The code is public at: https://github.com/Alsace08/Chain-of-Embedding."
+  },
+  {
+    "title": "Provable uncertainty decomposition via higher-order calibration",
+    "authors": [
+      "Ahdritz",
+      "Gollakota",
+      "Gopalan",
+      "Peale",
+      "Wieder"
+    ],
+    "year": "2025",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "We give a principled method for decomposing the predictive uncertainty of a model into aleatoric and epistemic components with explicit semantics relating them to the real-world data distribution. While many works in the literature have proposed such decompositions, they lack the type of formal guarantees we provide. Our method is based on the new notion of higher-order calibration, which generalizes ordinary calibration to the setting of higher-order predictors that predict mixtures over label distributions at every point. We show how to measure as well as achieve higher-order calibration using access to k-snapshots, namely examples where each point has k independent conditional labels. Under higherorder calibration, the estimated aleatoric uncertainty at a point is guaranteed to match the real-world aleatoric uncertainty averaged over all points where the prediction is made. To our knowledge, this is the first formal guarantee of this type that places no assumptions whatsoever on the real-world data distribution. Importantly, higher-order calibration is also applicable to existing higher-order predictors such as Bayesian and ensemble models and provides a natural evaluation metric for such models. We demonstrate through experiments that our method produces meaningful uncertainty decompositions for image classification."
+  },
+  {
+    "title": "Investigating uncertainty calibration of aligned language models under the multiple-choice setting",
+    "authors": [
+      "He",
+      "Cui",
+      "Chen",
+      "Hu",
+      "Zhu"
+    ],
+    "year": "2024",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Despite the significant progress made in practical applications of aligned language models (LMs), they tend to be overconfident in output answers compared to the corresponding pre-trained LMs. In this work, we systematically evaluate the impact of the alignment process on logit-based uncertainty calibration of LMs under the multiple-choice setting. We first conduct a thoughtful empirical study on how aligned LMs differ in calibration from their pre-trained counterparts. Experimental results reveal that there are two distinct uncertainties in LMs under the multiple-choice setting, which are responsible for the answer decision and the format preference of the LMs, respectively. Then, we investigate the role of these two types of uncertainty on aligned LM’s calibration through fine-tuning in synthetic alignment schemes and conclude that one reason for aligned LMs’ overconfidence is the alteration of their answer uncertainty. We hope our findings could provide insights into the design of more reliable alignment processes for LMs."
+  },
+  {
+    "title": "Beyond unimodal: Generalising neural processes for multimodal uncertainty estimation",
+    "authors": [
+      "Jung",
+      "Zhao",
+      "Dipnall"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Uncertainty estimation is an important research area to make deep neural networks (DNNs) more trustworthy. While extensive research on uncertainty estimation has been conducted with unimodal data, uncertainty estimation for multimodal data remains a challenge. Neural processes (NPs) have been demonstrated to be an effective uncertainty estimation method for unimodal data by providing the reliability of Gaussian processes with efficient and powerful DNNs. While NPs hold significant potential for multimodal uncertainty estimation, the adaptation of NPs for multimodal data has not been carefully studied. To bridge this gap, we propose Multimodal Neural Processes (MNPs) by generalising NPs for multimodal uncertainty estimation. Based on the framework of NPs, MNPs consist of several novel and principled mechanisms tailored to the characteristics of multimodal data. In extensive empirical evaluation, our method achieves state-of-the-art multimodal uncertainty estimation performance, showing its appealing robustness against noisy samples and reliability in out-of-distribution detection with faster computation time compared to the current state-of-the-art multimodal uncertainty estimation method."
+  },
+  {
+    "title": "Can llms express their uncertainty? An empirical evaluation of confidence elici- tation in llms",
+    "authors": [
+      "Xiong",
+      "Hu",
+      "Lu",
+      "Li",
+      "Fu",
+      "He",
+      "Hooi"
+    ],
+    "year": "2024",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Empowering large language models (LLMs) to accurately express confidence in their answers is essential for reliable and trustworthy decision-making. Previous confidence elicitation methods, which primarily rely on white-box access to internal model information or model fine-tuning, have become less suitable for LLMs, especially closed-source commercial APIs. This leads to a growing need to explore the untapped area of black-box approaches for LLM uncertainty estimation. To better break down the problem, we define a systematic framework with three components: prompting strategies for eliciting verbalized confidence, sampling methods for generating multiple responses, and aggregation techniques for computing consistency. We then benchmark these methods on two key tasks—confidence calibration and failure prediction—across five types of datasets (e.g., commonsense and arithmetic reasoning) and five widely-used LLMs including GPT-4 and LLaMA 2 Chat. Our analysis uncovers several key insights: 1) LLMs, when verbalizing their confidence, tend to be overconfident, potentially imitating human patterns of expressing confidence. 2) As model capability scales up, both calibration and failure prediction performance improve, yet still far from ideal performance. 3) Employing our proposed strategies, such as human-inspired prompts, consistency among multiple responses, and better aggregation strategies can help mitigate this overconfidence from various perspectives. 4) Comparisons with white-box methods indicate that while white-box methods perform better, the gap is narrow, e.g., 0.522 to 0.605 in AUROC. Despite these advancements, none of these techniques consistently outperform others, and all investigated methods struggle in challenging tasks, such as those requiring professional knowledge, indicating significant scope for improvement. We believe this study can serve as a strong baseline and provide insights for eliciting confidence in black-box LLMs. The code is publicly available at https://github.com/MiaoXiong2320/llm-uncertainty."
+  },
+  {
+    "title": "Internal consistency and self-feedback in large language models: A survey",
+    "authors": [
+      "Liang",
+      "Li",
+      "Li",
+      "Wang",
+      "Wang",
+      "Xiong",
+      "Li"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large language models (LLMs) often exhibit deficient reasoning or generate hallucinations. To address these, studies prefixed with “Self-” such as Self-Consistency, Self-Improve, and Self-Refine have been initiated. They share a commonality: involving LLMs evaluating and updating themselves. Nonetheless, these efforts lack a unified perspective on summarization, as existing surveys predominantly focus on categorization."
+  },
+  {
+    "title": "When Can LLMs <i>Actually</i> Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+    "authors": [
+      "Kamoi",
+      "Zhang",
+      "Zhang",
+      "Han",
+      "Zhang"
+    ],
+    "year": "2024-11-04",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00713/125177/When-Can-LLMs-Actually-Correct-Their-Own-Mistakes",
+    "abstract": "Abstract\n            Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference. Prior work has proposed various self-correction frameworks using different sources of feedback, including self-evaluation and external feedback. However, there is still no consensus on the question of when LLMs can correct their own mistakes, as recent studies also report negative results. In this work, we critically survey broad papers and discuss the conditions required for successful self-correction. We first find that prior studies often do not define their research questions in detail and involve impractical frameworks or unfair evaluations that over-evaluate self-correction. To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs, except for studies in tasks that are exceptionally suited for self-correction, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction."
+  },
+  {
+    "title": "Calibrating Language Models via Augmented Prompt Ensembles",
+    "authors": [
+      "Jiang",
+      "Ruan",
+      "Huang",
+      "Liao",
+      "Pitis",
+      "Grosse"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large Language Models (LLMs) have achieved remarkable success, but often exhibit overconfidence and poor calibration, particularly after instruction-finetuning, which limits their reliability and applicability. To address this, we investigate ensembles, a technique known to enhance neural network calibration but underexplored in LLMs, possibly due to the computational cost of training and evaluating multiple LLMs. We introduce Calibration via Augmented Prompt Ensembles (CAPE), a practical approach to LLM ensembles that leverages the inherent prompt sensitivity of LLMs by augmenting prompts, e.g., by template paraphrasing or option permutation. Our method requires no additional training and can be efficiently evaluated in batch mode, yielding significant calibration improvements for instructiontuned LLMs."
+  },
+  {
+    "title": "How Can We Know When Language Models Know? On the Calibration of Language Models for Question Answering",
+    "authors": [
+      "Jiang",
+      "Araki",
+      "Ding",
+      "Neubig"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Recent works have shown that language models (LM) capture different types of knowledge regarding facts or common sense. However, because no model is perfect, they still fail to provide appropriate answers in many cases. In this paper, we ask the question, ‘‘How can we know when language models know, with confidence, the answer to a particular query?’’ We examine this question from the point of view of calibration, the property of a probabilistic model’s predicted probabilities actually being well correlated with the probabilities of correctness. We examine three strong generative models—T5, BART, and GPT-2—and study whether their probabilities on QA tasks are well calibrated, finding the answer is a relatively emphatic no. We then examine methods to calibrate such models to make their confidence scores correlate better with the likelihood of correctness through fine-tuning, post-hoc probability modification, or adjustment of the predicted outputs or inputs. Experiments on a diverse range of datasets demonstrate the effectiveness of our methods. We also perform analysis to study the strengths and limitations of these methods, shedding light on further improvements that may be made in methods for calibrating LMs. We have released the code at https://github.com/jzbjyb /lm-calibration."
+  },
+  {
+    "title": "Towards Improving Open-box Hallucination Detection in Large Language Models (LLMs)",
+    "authors": [
+      "Suresh",
+      "Aljundi",
+      "Nkisi-Orji",
+      "Wiratunga"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Due to the increasing availability of Large Language Models (LLMs) through both proprietary and open-sourced releases of models, the adoption of LLMs across applications has drastically increased making them commonplace in day-to-day lives. Yet, the problem of detecting and mitigating hallucinations in these models remains an open challenge. This work considers the problem of open-box hallucination detection, i.e., detecting hallucinations when there is full access to the generation process. Recent work has shown that simple binary probes constructed on the model activation space can act as reliable hallucination detectors. This work extends probing-based detection methods by considering the activation space at multiple layers, components and token positions during generation. Experiments are conducted across two LLMs and three open-domain fact recall datasets. The results indicate that hallucinations can be detected at various layers as well as token positions during the generation process. This indicates the potential for saving compute costs through early detection as well as for improving detection performance by designing more sophisticated probing methods."
+  },
+  {
+    "title": "ReTA: Recursively Thinking Ahead to Improve the Strategic Reasoning of Large Language Models",
+    "authors": [
+      "Duan",
+      "Wang",
+      "Diffenderfer",
+      "Sun",
+      "Chen",
+      "Kailkhura",
+      "Xu"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Current logical reasoning evaluations of Large Language Models (LLMs) primarily focus on single-turn and static environments, such as arithmetic problems. The crucial problem of multi-turn, strategic reasoning is under-explored. In this work, we analyze the multi-turn strategic reasoning of LLMs through text-driven complete- and incompleteinformation gaming, e.g., board games (TicTac-Toe, Connect-4) and poker games (Texas Hold’em Poker). Specifically, we consider two distinct scenarios: 1) Online Racing, featuring multiple LLMs/agents to facilitate direct competition and comparison; 2) Offline Probing, constructing targeted questions with verified ground truth to evaluate LLMs’ strategic behaviors. Experimental results demonstrate that existing state-of-the-art LLMs and reasoning schemes are largely ineffective for strategic reasoning tasks. To mitigate these limitations, we propose a simple yet effective Recursively Thinking-Ahead (ReTA) agent, incorporating a recursive prompting mechanism that automatically analyzes the opponents’ future moves/actions and assigns reward signals for these situations, to strengthen the strategic reasoning of LLMs. We hope our work could spur further research and exploration in the multi-turn strategic reasoning of LLMs. The code is available at https: //github.com/jinhaoduan/ReTA."
+  },
+  {
+    "title": "HOW MANY OPINIONS DOES YOUR LLM HAVE? IMPROVING UNCERTAINTY ESTIMATION IN NLG",
+    "authors": [
+      "Aichberger",
+      "Schweighofer",
+      "Ielanskyi",
+      "Hochreiter"
+    ],
+    "year": "2024",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Large language models (LLMs) suffer from hallucination, where they generate text that is not factual. Hallucinations impede many applications of LLMs in society and industry as they make LLMs untrustworthy. It has been suggested that hallucinations result from predictive uncertainty. If an LLM is uncertain about the semantic meaning it should generate next, it is likely to start hallucinating. We introduce Semantic-Diverse Language Generation (SDLG) to quantify predictive uncertainty of LLMs. Our method detects if a generated text is hallucinated by offering a precise measure of aleatoric semantic uncertainty. Experiments demonstrate that SDLG consistently outperforms existing methods while being computationally the most efficient, setting a new standard for uncertainty estimation in NLG."
+  },
+  {
+    "title": "Position: TrustLLM: Trustworthiness in Large Language Models",
+    "authors": [
+      "Huang",
+      "Sun",
+      "Wang",
+      "Wu",
+      "Zhang",
+      "Li",
+      "Gao",
+      "Huang",
+      "Lyu",
+      "Zhang",
+      "Li",
+      "Sun",
+      "Liu",
+      "Liu",
+      "Wang",
+      "Zhang",
+      "Vidgen",
+      "Kailkhura",
+      "Xiong",
+      "Xiao",
+      "Li",
+      "Xing",
+      "Huang",
+      "Liu",
+      "Ji",
+      "Wang",
+      "Zhang",
+      "Yao",
+      "Kellis",
+      "Zitnik",
+      "Jiang",
+      "Bansal",
+      "Zou",
+      "Pei",
+      "Liu",
+      "Gao",
+      "Han",
+      "Zhao",
+      "Tang",
+      "Wang",
+      "Vanschoren",
+      "Mitchell",
+      "Shu",
+      "Xu",
+      "Chang",
+      "He",
+      "Huang",
+      "Backes",
+      "Gong",
+      "Yu",
+      "Chen",
+      "Gu",
+      "Xu",
+      "Ying",
+      "Ji",
+      "Jana",
+      "Chen",
+      "Liu",
+      "Zhou",
+      "Wang",
+      "Li",
+      "Zhang",
+      "Wang",
+      "Xie",
+      "Chen",
+      "Wang",
+      "Liu",
+      "Ye",
+      "Cao",
+      "Chen",
+      "Zhao"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "LLMs can combat LLM hallucinations",
+    "authors": [
+      "Verspoor"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": ""
+  },
+  {
+    "title": "Effective gene expression prediction from sequence by integrating long-range interactions",
+    "authors": [
+      "Avsec",
+      "Agarwal",
+      "Visentin",
+      "Ledsam",
+      "Grabska-Barwinska",
+      "Taylor",
+      "Assael",
+      "Jumper",
+      "Kohli",
+      "Kelley"
+    ],
+    "year": "10/2021",
+    "dateAdded": "",
+    "tags": [],
+    "url": "https://www.nature.com/articles/s41592-021-01252-x",
+    "abstract": "Abstract\n            \n              How noncoding DNA determines gene expression in different cell types is a major unsolved problem, and critical downstream applications in human genetics depend on improved solutions. Here, we report substantially improved gene expression prediction accuracy from DNA sequences through the use of a deep learning architecture, called Enformer, that is able to integrate information from long-range interactions (up to 100 kb away) in the genome. This improvement yielded more accurate variant effect predictions on gene expression for both natural genetic variants and saturation mutagenesis measured by massively parallel reporter assays. Furthermore, Enformer learned to predict enhancer–promoter interactions directly from the DNA sequence competitively with methods that take direct experimental data as input. We expect that these advances will enable more effective fine-mapping of human disease associations and provide a framework to interpret\n              cis\n              -regulatory evolution."
+  },
+  {
+    "title": "HyenaDNA: Long-Range Genomic Sequence Modeling at Single Nucleotide Resolution",
+    "authors": [
+      "Nguyen",
+      "Poli",
+      "Faizi"
+    ],
+    "year": "",
+    "dateAdded": "",
+    "tags": [],
+    "url": "",
+    "abstract": "Genomic (DNA) sequences encode an enormous amount of information for gene regulation, protein synthesis, and numerous other cellular properties. Similar to natural language models, researchers have proposed foundation models in genomics to learn generalizable features from unlabeled genome data that can then be fine-tuned for downstream tasks such as identifying regulatory elements. Due to the quadratic scaling of attention, previous Transformer-based genomic models have used 512 to 4k tokens as context (<0.001% of the human genome), significantly limiting the modeling of long-range interactions in DNA. In addition, these methods rely on tokenizers or fixed k-mers to aggregate meaningful DNA units, losing single nucleotide resolution (i.e. DNA \"characters\") where subtle genetic variations can completely alter protein function via single nucleotide polymorphisms (SNPs). Recently, Hyena, a large language model based on implicit convolutions was shown to match attention in quality while allowing longer context lengths and lower time complexity. Leveraging Hyena’s new long-range capabilities, we present HyenaDNA, a genomic foundation model pretrained on the human reference genome with context lengths of up to 1 million tokens at the single nucleotide-level – an up to 500x increase over previous dense attentionbased models. HyenaDNA scales sub-quadratically in sequence length (training up to 160x faster than Transformer), uses single nucleotide tokens, and has full global context at each layer. We explore what longer context enables - including the first use of in-context learning in genomics for simple adaptation to novel tasks without updating pretrained model weights. On a long-range species classification task, HyenaDNA is able to effectively solve the challenge by increasing the context length to 1M without downsampling. On fine-tuned benchmarks from the Nucleotide Transformer, HyenaDNA reaches state-of-the-art (SotA) on 12 of 18 datasets using a model with orders of magnitude less parameters and pretraining data.2 On the GenomicBenchmarks, HyenaDNA surpasses SotA on 7 of 8 datasets on average by +10 accuracy points, and by as much as +20 accuracy points on enhancer identification. Code available at https://github.com/HazyResearch/hyenadna."
+  }
+]

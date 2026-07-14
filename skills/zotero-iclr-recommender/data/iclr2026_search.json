@@ -1,0 +1,205 @@
+[
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2026-paper-list/",
+    "title": "ICLR 2026 Accepted Paper List - Paper Copilot",
+    "content": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). - **min / max / mean / std:** These are statistical summaries of the *reviewer average scores per submission* within each decision tier (e.g., Accept tier). If rating scores are publicly available, the statistics are based on submissions that opted in for release. - **Withdraw:** Includes papers withdrawn by the authors, including those withdrawn after acceptance. As a result, charts involving author counts (e.g., top authors, affiliations) may contain **redundant entries** if multiple authors share the same name. If you apply filters across multiple columns, the combined match count appears under `“All Filter Matches”`. - **Metrics:** Each paper includes a metrics column showing the review score and citation count from Google Scholar.",
+    "score": 0.914176,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/statistics/iclr-statistics/iclr-2026-statistics/",
+    "title": "ICLR 2026 Statistics - Paper Copilot",
+    "content": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). - **min / max / mean / std:** These are statistical summaries of the *reviewer average scores per submission* within each decision tier (e.g., Accept tier). If rating scores are publicly available, the statistics are based on submissions that opted in for release. The original default order — based on `review rating`, then `review confidence`, then `title` — is preserved in the *“#”* column. | | Loaded 0 Records Click to Fetch All | Matches: 0 / 0 | Click to Hide Reject |  Raw data is available on Github (I'd appreciate your star!) | Also please feel free to leave an issue to update data here |.",
+    "score": 0.7997713,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/",
+    "title": "Accepted Papers - Paper Copilot",
+    "content": "| 100 | AISTATS | AISTATS  * 2025   + 2025 | AISTATS  * 1995 - 2025   + 2025   + 2024   + 2023   + 2022   + 2021   + 2020   + 2019   + 2018   + 2017   + 2016   + 2015   + 2014   + 2013   + 2012   + 2011   + 2010   + 2009   + 2007   + 2005   + 2003   + 2001   + 1999   + 1997   + 1995 | International Conference on Artificial Intelligence and Statistics |. | 86 | IROS | IROS  * 2025   + 2025 | IROS  * 2000 - 2024   + 2024   + 2023   + 2022   + 2021   + 2020   + 2019   + 2018   + 2017   + 2016   + 2015   + 2014   + 2013   + 2012   + 2011   + 2010   + 2009   + 2008   + 2007   + 2006   + 2005   + 2004   + 2003   + 2002   + 2001   + 2000 | IEEE/RSJ International Conference on Intelligent Robots and Systems |.",
+    "score": 0.72768575,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/statistics/iclr-statistics/",
+    "title": "ICLR Statistics - Paper Copilot",
+    "content": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Conditional | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. | ICLR 2019   • statistic  • paperlist | 1579 min: 1.50, max: 8.60 avg: 5.29, std: 1.21 | 502 (31.79%) min: 3.60, max: 8.60 avg: 6.58, std: 0.66 | 478 (30.27%) min: 3.60, max: 8.60 avg: 6.53, std: 0.62 | - | 24 (1.52%) min: 6.50, max: 8.60 avg: 7.66, std: 0.46 | - | 921 (58.33%) min: 1.50, max: 7.00 avg: 4.76, std: 0.87 | 160 (10.13%) min: 2.30, max: 6.00 avg: 4.13, std: 0.73 | 4 (0.25%) | - | , | openreview iclr.cc |. - **min / max / mean / std:** These are statistical summaries of the *reviewer average scores per submission* within each decision tier (e.g., Accept tier).",
+    "score": 0.41108778,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2013-paper-list/",
+    "title": "ICLR 2013 Accepted Paper List - Paper Copilot",
+    "content": "- Overview: This table presents papers from the ICLR conference, year 2013 . - Filtering: By default, the table loads the first 100 records . You can use the",
+    "score": 0.3480693,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2019-paper-list/",
+    "title": "ICLR 2019 Accepted Paper List - Paper Copilot",
+    "content": "- Overview: This table presents papers from the ICLR conference, year 2019 . - Filtering: By default, the table loads the first 100 records . You can use the",
+    "score": 0.3434964,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2023-paper-list/",
+    "title": "ICLR 2023 Accepted Paper List",
+    "content": "This table presents papers from the ICLR conference, year 2023. Filtering: By default, the table loads the first 100 records.",
+    "score": 0.33495966,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2025-paper-list/",
+    "title": "ICLR 2025 Accepted Paper List - Paper Copilot",
+    "content": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). - **min / max / mean / std:** These are statistical summaries of the *reviewer average scores per submission* within each decision tier (e.g., Accept tier). If rating scores are publicly available, the statistics are based on submissions that opted in for release. - **Withdraw:** Includes papers withdrawn by the authors, including those withdrawn after acceptance. As a result, charts involving author counts (e.g., top authors, affiliations) may contain **redundant entries** if multiple authors share the same name. If you apply filters across multiple columns, the combined match count appears under `“All Filter Matches”`. - **Metrics:** Each paper includes a metrics column showing the review score and citation count from Google Scholar.",
+    "score": 0.33027726,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2014-paper-list/",
+    "title": "ICLR 2014 Accepted Paper List",
+    "content": "- Overview: This table presents papers from the ICLR conference, year 2014 . - Filtering: By default, the table loads the first 100 records . You can use the",
+    "score": 0.31776538,
+    "raw_content": null
+  },
+  {
+    "url": "https://papercopilot.com/statistics/iclr-statistics/iclr-2025-statistics/",
+    "title": "ICLR 2025 Statistics - Paper Copilot",
+    "content": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). For example, if there are 100 total submissions and 27 were accepted, the `Accept Rate = 27 / 100 = 27%`. - **min / max / mean / std:** These are statistical summaries of the *reviewer average scores per submission* within each decision tier (e.g., Accept tier). If rating scores are publicly available, the statistics are based on submissions that opted in for release. `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw`. You can use the `filter box under each column header` to search within these loaded entries. The original default order — based on `review rating`, then `review confidence`, then `title` — is preserved in the *“#”* column.",
+    "score": 0.29004538,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/2026/02/iclr-2026-papers-highlights/",
+    "title": "Paper Digest: ICLR 2026 Papers & Highlights",
+    "content": "| 9 | [**RewardEval: Advancing Reward Model Evaluation**](https://www.paperdigest.org/paper/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17) [Related Papers](https://www.paperdigest.org/review/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17)[Related Patents](https://www.paperdigest.org/related_patent/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17)[Related Grants](https://www.paperdigest.org/related_grant/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17)[Related Venues](https://www.paperdigest.org/search/?type=venue&q=paper_id:iclr-forum-id-fb0G86Dewb-2026-02-17)[Related Experts](https://www.paperdigest.org/related_expert/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17)[View](https://openreview.net/forum?id=fb0G86Dewb)[Save](https://www.paperdigest.org/paper/?action=save_to_lib&paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17 \"Save\") _Highlight: In this paper, we describe our benchmark construction process and report how existing models perform on it, while quantifying and providing new insights on how performance on the benchmark correlates with downstream use of the models in both inference-time scaling algorithms, like best-of-N sampling, and RLHF training algorithms like proximal policy optimization._ | [Saumya Malik](https://www.paperdigest.org/isearch/?name=saumya_malik); [Valentina Pyatkin](https://www.paperdigest.org/isearch/?name=valentina_pyatkin); [Sander Land](https://www.paperdigest.org/isearch/?name=sander_land); [Jacob Morrison](https://www.paperdigest.org/isearch/?name=jacob_morrison); [Noah A. | 12 | [**Dynamic Chunking for End-to-End Hierarchical Sequence Modeling**](https://www.paperdigest.org/paper/?paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17) [Related Papers](https://www.paperdigest.org/review/?paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17)[Related Patents](https://www.paperdigest.org/related_patent/?paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17)[Related Grants](https://www.paperdigest.org/related_grant/?paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17)[Related Venues](https://www.paperdigest.org/search/?type=venue&q=paper_id:iclr-forum-id-ZbfLR9NbNF-2026-02-17)[Related Experts](https://www.paperdigest.org/related_expert/?paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17)[View](https://openreview.net/forum?id=ZbfLR9NbNF)[Save](https://www.paperdigest.org/paper/?action=save_to_lib&paper_id=iclr-forum-id-ZbfLR9NbNF-2026-02-17 \"Save\") _Highlight: We introduce a collection of new techniques that enable a dynamic chunking mechanism which automatically learns content- and context- dependent segmentation strategies learned jointly with the rest of the model._ | [Sukjun Hwang](https://www.paperdigest.org/isearch/?name=sukjun_hwang); [Brandon Wang](https://www.paperdigest.org/isearch/?name=brandon_wang); [Albert Gu](https://www.paperdigest.org/isearch/?name=albert_gu); |.",
+    "score": 0.9570577,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/category/machine-learning/",
+    "title": "MachineLearning - Paper Digest",
+    "content": "## Category: MachineLearning. ### Paper Digest: ICLR 2026 Papers & Highlights. ### NeurIPS 2025 Papers with Code & Data. ### Paper Digest: NeurIPS 2025 Papers & Highlights. ### Most Influential NIPS Papers (2025-09 Version). ### Most Influential ICML Papers (2025-09 Version). ### Most Influential ICLR Papers (2025-09 Version). ### Most Influential UAI Papers (2025-09 Version). ### Most Influential AISTATS Papers (2025-09 Version). ### Most Influential ArXiv (Machine Learning) Papers (2025-09 Version). ### Paper Digest: UAI 2025 Papers & Highlights. ##### Contact. 12 E 49th St, New York,. ##### Paper Digest. © 2018-2026 Paper Digest All rights reserved.",
+    "score": 0.8548001,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/paper/?paper_id=iclr-forum-id-b4C3zAzRgH-2026-02-17",
+    "title": "GeomMotif: A Benchmark for Arbitrary Geometric Preservation in ...",
+    "content": "HIGHLIGHT · We introduce GeomMotif, a systematic benchmark that evaluates arbitrary structural fragment preservation without requiring functional specificity.",
+    "score": 0.8127637,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/isearch/?name=freddie_bickford_smith",
+    "title": "FREDDIE BICKFORD SMITH | Paper Digest",
+    "content": "Highlight: We propose a general-purpose approach for improving the ability of large language models (LLMs) to intelligently and adaptively gather",
+    "score": 0.56920683,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/isearch/?name=qingyang_mao",
+    "title": "QINGYANG MAO | Paper Digest",
+    "content": "Highlight: In this work, we introduce ChemTable, a large-scale benchmark of real-world chemical tables curated from the experimental sections of",
+    "score": 0.5425973,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/isearch/?name=viacheslav_meshchaninov",
+    "title": "VIACHESLAV MESHCHANINOV | Paper Digest",
+    "content": "Highlight: In this paper, we propose Smoothing Diffusion on Token Embeddings (Smoothie), a novel diffusion method that combines the strengths of both",
+    "score": 0.54245186,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/best-paper-digest/",
+    "title": "“Best Paper” Digest",
+    "content": "# Best Paper Digest. ## Read the most influential papers from the very best conferences and journals. ## Most Influential Papers by Areas. The digests presented on this page are updated regularly to reflect the up-to-date information. **Electrical Engineering and Systems Science**. Users can access paper highlights for many top conferences through conference paper digest. Users may also like to explore our topic tracking service, which tracks a number of trending topics in real-time, like *algorithmic trading, autopilot.*. ### Interested in receiving a one sentence summary of every new paper in your area? Join us as tens of thousands of other people! ##### Contact. 12 E 49th St, New York,. ##### Paper Digest. © 2018-2026 Paper Digest All rights reserved.",
+    "score": 0.4874788,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/isearch/?name=guillermo_bernardez",
+    "title": "GUILLERMO BERNARDEZ - Paper Digest",
+    "content": "Highlight: This paper attempts to confront some pending questions in that regard: Q1 Can the concept of homophily play a crucial role in Hypergraph",
+    "score": 0.4833807,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.paperdigest.org/2019/05/iclr-2019-highlights/",
+    "title": "Paper Digest: ICLR 2019 Highlights",
+    "content": "pdf– highlights of all 478 poster papers. The International Conference on Learning Representations (ICLR) is one of the top machine learning",
+    "score": 0.41506538,
+    "raw_content": null
+  },
+  {
+    "url": "https://aiem.jhu.edu/2026/01/26/two-papers-accepted-at-iclr-2026/",
+    "title": "Two Papers Accepted at ICLR 2026 - AIEM - Johns Hopkins University",
+    "content": "### News. 3. Two Papers Accepted at ICLR 2026. #### 26 JanTwo Papers Accepted at ICLR 2026. Our group has 2 papers accepted at ICLR 2026. Peng, “ ULTRA-360: Unconstrained Dataset for Large-scale Temporal 3D Reconstruction across Altitudes and Omnidirectional Views”, Proc. on Learning Research, April 2026. “Imagedoctor: Diagnosing text-to-image generation via grounded image reasoning”, Proc. on Learning Research, April 2026. ###### Recent Posts. * Three Papers accepted at MIDL 2026. * Journal Paper Accepted at IEEE Transactions on Image Processing. * Two Papers Accepted at ICLR 2026. * Our Paper is Awarded as Best Paper of PSRC in December 2025. * Journal paper accepted at TMLR.",
+    "score": 0.9995272,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.uni-saarland.de/en/department/lst/news/numerous-papers-accepted-at-iclr-2026-43735.html",
+    "title": "Numerous papers accepted at ICLR 2026 - Universität des Saarlandes",
+    "content": "Saarland University logo - Link to homepage. Department of Language Science and Technology. # Numerous papers accepted at ICLR 2026. Numerous papers of our department were accepted at the the International Conference on Learning Representations (ICLR) 2026. ## Saarland University. ### Contact. www.uni-saarland.de/en/contact. ### Sites. ### Site maps. ### Search. ### Internal. Legal notice | Privacy notice | Accessibility | Emergencies. ##### Cookie Configuration. In addition to technically necessary cookies, this website uses the web analytics software Matomo. To help us improve user experience, we use Matomo to analyse how visitors interact with the website. Matomo runs on a university server. Your data will be stored for a period not exceeding six months and will not be disclosed to third parties. Your IP address cannot be used to identify you. For more information please refer to the university's privacy notice.",
+    "score": 0.99929035,
+    "raw_content": null
+  },
+  {
+    "url": "https://research.yandex.com/blog/papers-accepted-to-iclr-2026",
+    "title": "Papers accepted to ICLR 2026 - Yandex Research",
+    "content": "This work introduces a new scale-wise distillation framework for diffusion models that adapts the idea of next-scale prediction to diffusion-based few-step generators. In this paper, we present a systematic study of NVIDIA’s recently introduced Microscaling formats (MXFP4, NVFP4) for post-training quantization, revealing gaps between their promise and real-world performance. In this paper, we develop the first accelerated, parameter-free gradient method that automatically adapts its stepsize to the local curvature of the objective function at a linear (geometric) rate. In the paper, we present a unified theoretical analysis of SGD with adaptive preconditioning under matrix smoothness and noise, covering popular optimization algorithms such as AdaGrad-Norm, AdaGrad, and Shampoo. In this work, we introduce a parameter-free optimization method based on Sign-SGD. We develop an approach (specifically the ALIAS algorithm) that automatically adapts stepsizes during training to achieve performance competitive with meticulously tuned baselines, effectively eliminating the need for extensive hyperparameter search.",
+    "score": 0.9992505,
+    "raw_content": null
+  },
+  {
+    "url": "https://aip.riken.jp/news/iclr2026/",
+    "title": "34 papers have been accepted at ICLR 2026 - Riken AIp",
+    "content": "34 papers were accepted at ICLR 2026, a major conference on machine learning. * Bayesian Parameter Shift Rules in Variational Quantum Eigensolvers. * Bilateral Information-aware Test-time Adaptation for Vision-Language Models. * CARPRT: Class-Aware Zero-Shot Prompt Reweighting for Vision-Language Model. * Cross-Embodiment Offline Reinforcement Learning for Heterogeneous Robot Datasets. * Diffusion Bridge Variational Inference for Deep Gaussian Processes. * Expert Heads: Robust Evidence Identification for Large Language Models. * Fast Escape, Slow Convergence: Learning Dynamics of Phase Retrieval under Power-Law Data. * Federated ADMM from Bayesian Duality. * Learning from Label Proportions via Proportional Value Classification. * Neuron-Level Analysis of Cultural Understanding in Large Language Models. * Noisy-Pair Robust Representation Alignment for Positive-Unlabeled Learning. * R2-Dreamer: Redundancy-Reduced World Models without Decoders or Augmentation. * Rethinking Policy Diversity in Ensemble Policy Gradient in Large-Scale Reinforcement Learning. * Robust Deep Reinforcement Learning against Adversarial Behavior Manipulation. * Toward Safer Diffusion Language Models: Discovery and Mitigation of Priming Vulnerability. * Towards Understanding Valuable Preference Data for Large Language Model Alignment.",
+    "score": 0.99857855,
+    "raw_content": null
+  },
+  {
+    "url": "https://openreview.net/group?id=ICLR.cc/2026",
+    "title": "ICLR 2026",
+    "content": "Welcome to the OpenReview homepage for ICLR 2026.",
+    "score": 0.998487,
+    "raw_content": null
+  },
+  {
+    "url": "https://www.vanderschaar-lab.com/iclr-workshops-2026/",
+    "title": "van der Schaar Lab @ ICLR Workshops 2026",
+    "content": "We are pleased to announce that seven papers from the van der Schaar Lab have been accepted to ICLR 2026. These works span new methodological",
+    "score": 0.9976404,
+    "raw_content": null
+  },
+  {
+    "url": "https://actu.epfl.ch/news/epfl-iclr-2026/",
+    "title": "EPFL @ ICLR 2026",
+    "content": "The following EPFL papers have been accepted to ICLR 2026(the Fourteenth International Conference on Learning Representations). The",
+    "score": 0.99719906,
+    "raw_content": null
+  },
+  {
+    "url": "https://blog.iclr.cc/2026/01/13/iclr2026-workshops/",
+    "title": "Workshops at ICLR 2026 - ICLR Blog",
+    "content": "# Workshops at ICLR 2026. * 151 (135 valid) workshop proposal submissions. * Efforts by ICLR 2026 Workshop Chairs & Reviewers. | **ICLR 2026 Workshop on AI with Recursive Self-Improvement** |. | **Workshop on Multi-Agent Learning and Its Opportunities in the Era of Generative AI** |. | **Learning Meaningful Representations of Life (LMRL) Workshop @ ICLR 2026** |. | **ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems (MemAgents)** |. | **4th ICLR Workshop on Machine Learning for Remote Sensing** |. | **AI4MAT-ICLR-2026: ICLR 2026 Workshop on AI for Accelerated Materials Design** |. | **1st ICLR Workshop on Time Series in the Age of Large Models** |. We thank everyone who prepared and submitted a workshop proposal to ICLR 2026. The topics of ICLR 2026 workshops range over Agentic Systems, Alignments, Continual Learning, Generative Models, Memory, Reasoning, Applications, etc. ## **ICLR 2026 Workshops in Numbers**. * 417: reviews submitted by 74 workshop proposal reviewers.",
+    "score": 0.9911527,
+    "raw_content": null
+  },
+  {
+    "url": "https://sites.google.com/view/ai4mat/ai4mat-2022/accepted-work",
+    "title": "AI4Mat-ICLR 2026 - Accepted Work",
+    "content": "Papers · A deep learning and data archaeology approach for mosquito repellent discovery · Conformer Search Using SE3-Transformers and Imitation Learning · AI-",
+    "score": 0.9871788,
+    "raw_content": null
+  },
+  {
+    "url": "https://gptzero.me/news/iclr-2026/",
+    "title": "GPTZero uncovers 50+ Hallucinations in ICLR 2026 - AI Detector",
+    "content": "By speeding up the writing process, LLMs and other AI tools are overwhelming scholarly journals and conferences and the peer review pipeline with hallucinated papers (\"AI slop\"). The GPTZero team used our Hallucination Check tool to scan 300 papers under review by the prestigious International Conference on Learning Representations (ICLR). | Title | Average Review Rating | Paper Link | Citation Check Scan Link | Example of Verified Hallucination | Comment |. | Two papers with similar titles exist here and here, but the authors, journal, and date do not match. | Understanding Transformer Architecture through Continuous Dynamics: A Partial Differential Equation Perspective | 3.0 | Understanding Transformer Architecture through Continuous Dynamics: A Partial Differential Equation Perspective | OpenReview |  | Zijie J Wang, Yuhao Choi, and Dongyeop Wei. On the identity of the representation learned by pre-trained language models. | A similar paper with two matching authors exists, but the other authors, title, and journal are wrong.",
+    "score": 0.97112906,
+    "raw_content": null
+  }
+]

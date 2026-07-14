@@ -1,0 +1,191 @@
+{
+  "interest_profile": {
+    "top_keywords": [
+      "language model",
+      "multimodal",
+      "LLM",
+      "reasoning",
+      "attention",
+      "vision",
+      "Self-improvement",
+      "self-improvement",
+      "chain-of-thought",
+      "efficient",
+      "llm",
+      "speculative",
+      "decoding",
+      "adversarial",
+      "pruning",
+      "transformer",
+      "Efficient",
+      "KV cache",
+      "Llm",
+      "Hallucination"
+    ],
+    "recent_focus": "Flyprompt: Brain-inspired random-expanded routing with temporal-ensemble experts for general continual learning One-prompt strikes back: Sparse mixture of experts for prompt-based continual learning ARECHO: Autoregressive evaluation via chain-based hypothesis optimization for speech multi-metric estimation Overcoming joint intractability with lossless hierarchical speculative decoding Towards lifelong learning of large language models: A survey Continual learning of large language models: A comp",
+    "total_papers": 100,
+    "recent_count": 20
+  },
+  "recommendations": [
+    {
+      "rank": 1,
+      "title": "ICLR 2026 Accepted Paper List - Paper Copilot",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2026-paper-list/",
+      "snippet": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). - **min / max / mean ",
+      "score": 100,
+      "matched_keywords": []
+    },
+    {
+      "rank": 2,
+      "title": "ICLR 2026 Statistics - Paper Copilot",
+      "url": "https://papercopilot.com/statistics/iclr-statistics/iclr-2026-statistics/",
+      "snippet": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicable). - **min / max / mean ",
+      "score": 97,
+      "matched_keywords": []
+    },
+    {
+      "rank": 3,
+      "title": "Accepted Papers - Paper Copilot",
+      "url": "https://papercopilot.com/paper-list/",
+      "snippet": "| 100 | AISTATS | AISTATS  * 2025   + 2025 | AISTATS  * 1995 - 2025   + 2025   + 2024   + 2023   + 2022   + 2021   + 2020   + 2019   + 2018   + 2017   + 2016   + 2015   + 2014   + 2013   + 2012   + 2011   + 2010   + 2009   + 2007   + 2005   + 2003   + 2001   + 1999   + 1997   + 1995 | International ",
+      "score": 94,
+      "matched_keywords": []
+    },
+    {
+      "rank": 4,
+      "title": "ICLR Statistics - Paper Copilot",
+      "url": "https://papercopilot.com/statistics/iclr-statistics/",
+      "snippet": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Conditional | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. | ICLR 2019   • statistic  • paperlist | 1579 min: 1.50, max: 8.60 avg: 5.29, std: 1.21 | 502 (31.79%) min: 3.60, max: 8.60 avg: 6.58, std: 0.66 |",
+      "score": 91,
+      "matched_keywords": []
+    },
+    {
+      "rank": 5,
+      "title": "ICLR 2013 Accepted Paper List - Paper Copilot",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2013-paper-list/",
+      "snippet": "- Overview: This table presents papers from the ICLR conference, year 2013 . - Filtering: By default, the table loads the first 100 records . You can use the",
+      "score": 88,
+      "matched_keywords": []
+    },
+    {
+      "rank": 6,
+      "title": "ICLR 2019 Accepted Paper List - Paper Copilot",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2019-paper-list/",
+      "snippet": "- Overview: This table presents papers from the ICLR conference, year 2019 . - Filtering: By default, the table loads the first 100 records . You can use the",
+      "score": 85,
+      "matched_keywords": []
+    },
+    {
+      "rank": 7,
+      "title": "ICLR 2023 Accepted Paper List",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2023-paper-list/",
+      "snippet": "This table presents papers from the ICLR conference, year 2023. Filtering: By default, the table loads the first 100 records.",
+      "score": 82,
+      "matched_keywords": []
+    },
+    {
+      "rank": 8,
+      "title": "ICLR 2025 Accepted Paper List - Paper Copilot",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2025-paper-list/",
+      "snippet": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicabl",
+      "score": 79,
+      "matched_keywords": []
+    },
+    {
+      "rank": 9,
+      "title": "ICLR 2014 Accepted Paper List",
+      "url": "https://papercopilot.com/paper-list/iclr-paper-list/iclr-2014-paper-list/",
+      "snippet": "- Overview: This table presents papers from the ICLR conference, year 2014 . - Filtering: By default, the table loads the first 100 records . You can use the",
+      "score": 76,
+      "matched_keywords": []
+    },
+    {
+      "rank": 10,
+      "title": "ICLR 2025 Statistics - Paper Copilot",
+      "url": "https://papercopilot.com/statistics/iclr-statistics/iclr-2025-statistics/",
+      "snippet": "| Statistics | Total | Accept | Poster | Spotlight | Oral | Reject | Withdraw | Post Decision Withdraw | Desk Reject | Location | Source |. - **Count:** The total number of submissions is calculated as: `#Total = #Accept + #Reject + #Withdraw + #Desk Reject - #Post Decision Withdraw` (when applicabl",
+      "score": 73,
+      "matched_keywords": []
+    },
+    {
+      "rank": 11,
+      "title": "Paper Digest: ICLR 2026 Papers & Highlights",
+      "url": "https://www.paperdigest.org/2026/02/iclr-2026-papers-highlights/",
+      "snippet": "| 9 | [**RewardEval: Advancing Reward Model Evaluation**](https://www.paperdigest.org/paper/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17) [Related Papers](https://www.paperdigest.org/review/?paper_id=iclr-forum-id-fb0G86Dewb-2026-02-17)[Related Patents](https://www.paperdigest.org/related_patent/?p",
+      "score": 70,
+      "matched_keywords": []
+    },
+    {
+      "rank": 12,
+      "title": "MachineLearning - Paper Digest",
+      "url": "https://www.paperdigest.org/category/machine-learning/",
+      "snippet": "## Category: MachineLearning. ### Paper Digest: ICLR 2026 Papers & Highlights. ### NeurIPS 2025 Papers with Code & Data. ### Paper Digest: NeurIPS 2025 Papers & Highlights. ### Most Influential NIPS Papers (2025-09 Version). ### Most Influential ICML Papers (2025-09 Version). ### Most Influential IC",
+      "score": 67,
+      "matched_keywords": []
+    },
+    {
+      "rank": 13,
+      "title": "GeomMotif: A Benchmark for Arbitrary Geometric Preservation in ...",
+      "url": "https://www.paperdigest.org/paper/?paper_id=iclr-forum-id-b4C3zAzRgH-2026-02-17",
+      "snippet": "HIGHLIGHT · We introduce GeomMotif, a systematic benchmark that evaluates arbitrary structural fragment preservation without requiring functional specificity.",
+      "score": 64,
+      "matched_keywords": []
+    },
+    {
+      "rank": 14,
+      "title": "FREDDIE BICKFORD SMITH | Paper Digest",
+      "url": "https://www.paperdigest.org/isearch/?name=freddie_bickford_smith",
+      "snippet": "Highlight: We propose a general-purpose approach for improving the ability of large language models (LLMs) to intelligently and adaptively gather",
+      "score": 61,
+      "matched_keywords": []
+    },
+    {
+      "rank": 15,
+      "title": "QINGYANG MAO | Paper Digest",
+      "url": "https://www.paperdigest.org/isearch/?name=qingyang_mao",
+      "snippet": "Highlight: In this work, we introduce ChemTable, a large-scale benchmark of real-world chemical tables curated from the experimental sections of",
+      "score": 58,
+      "matched_keywords": []
+    },
+    {
+      "rank": 16,
+      "title": "VIACHESLAV MESHCHANINOV | Paper Digest",
+      "url": "https://www.paperdigest.org/isearch/?name=viacheslav_meshchaninov",
+      "snippet": "Highlight: In this paper, we propose Smoothing Diffusion on Token Embeddings (Smoothie), a novel diffusion method that combines the strengths of both",
+      "score": 55,
+      "matched_keywords": []
+    },
+    {
+      "rank": 17,
+      "title": "“Best Paper” Digest",
+      "url": "https://www.paperdigest.org/best-paper-digest/",
+      "snippet": "# Best Paper Digest. ## Read the most influential papers from the very best conferences and journals. ## Most Influential Papers by Areas. The digests presented on this page are updated regularly to reflect the up-to-date information. **Electrical Engineering and Systems Science**. Users can access ",
+      "score": 52,
+      "matched_keywords": []
+    },
+    {
+      "rank": 18,
+      "title": "GUILLERMO BERNARDEZ - Paper Digest",
+      "url": "https://www.paperdigest.org/isearch/?name=guillermo_bernardez",
+      "snippet": "Highlight: This paper attempts to confront some pending questions in that regard: Q1 Can the concept of homophily play a crucial role in Hypergraph",
+      "score": 49,
+      "matched_keywords": []
+    },
+    {
+      "rank": 19,
+      "title": "Paper Digest: ICLR 2019 Highlights",
+      "url": "https://www.paperdigest.org/2019/05/iclr-2019-highlights/",
+      "snippet": "pdf– highlights of all 478 poster papers. The International Conference on Learning Representations (ICLR) is one of the top machine learning",
+      "score": 46,
+      "matched_keywords": []
+    },
+    {
+      "rank": 20,
+      "title": "Two Papers Accepted at ICLR 2026 - AIEM - Johns Hopkins University",
+      "url": "https://aiem.jhu.edu/2026/01/26/two-papers-accepted-at-iclr-2026/",
+      "snippet": "### News. 3. Two Papers Accepted at ICLR 2026. #### 26 JanTwo Papers Accepted at ICLR 2026. Our group has 2 papers accepted at ICLR 2026. Peng, “ ULTRA-360: Unconstrained Dataset for Large-scale Temporal 3D Reconstruction across Altitudes and Omnidirectional Views”, Proc. on Learning Research, April",
+      "score": 43,
+      "matched_keywords": []
+    }
+  ]
+}
