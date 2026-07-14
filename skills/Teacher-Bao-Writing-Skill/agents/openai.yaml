@@ -1,0 +1,7 @@
+interface:
+  display_name: "Logic-First Paper Writing"
+  short_description: "AI and large-model paper writing"
+  default_prompt: "Use $Teacher-Bao-Writing-Skill to draft a logic-first Introduction for an AI or large-model paper with a central research question and contribution bullets."
+
+policy:
+  allow_implicit_invocation: true
