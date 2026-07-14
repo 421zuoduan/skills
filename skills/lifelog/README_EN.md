@@ -29,7 +29,7 @@ clawhub install lifelog
 
 Or manually:
 ```bash
-git clone https://github.com/421zuoduan/lifelog.git
+git clone https://github.com/your-username/lifelog.git
 ```
 
 ### 2. Configure Notion

@@ -117,7 +117,7 @@ unified-self-improving session end
 ## 存储结构
 
 ```
-~/.openclaw/workspace/memory/
+${OPENCLAW_HOME:-~/.openclaw}/workspace/memory/
 ├── hot/                    # 最近 3 次会话
 │   ├── session-*.md
 │   ├── session-*.jsonl

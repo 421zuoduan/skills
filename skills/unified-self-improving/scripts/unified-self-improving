@@ -32,7 +32,7 @@ unified-self-improving - 统一自我进化系统
     unified-self-improving namespace list
     unified-self-improving index rebuild
 
-完整文档请查看: ~/.openclaw/workspace/skills/unified-self-improving/SKILL.md
+完整文档请查看: ${OPENCLAW_HOME:-~/.openclaw}/workspace/skills/unified-self-improving/SKILL.md
 EOF
 }
 

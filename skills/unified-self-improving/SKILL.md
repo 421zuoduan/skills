@@ -153,7 +153,7 @@ unified-self-improving detect-pattern -m 3
 
 ```bash
 # 加载索引
-cat ~/.openclaw/workspace/memory/index.jsonl | jq -s 'from_entries'
+cat ${OPENCLAW_HOME:-~/.openclaw}/workspace/memory/index.jsonl | jq -s 'from_entries'
 
 # 召回相关学习
 unified-self-improving recall --id learn-xxx
@@ -176,7 +176,7 @@ unified-self-improving session end
 ## 存储结构
 
 ```
-~/.openclaw/workspace/memory/
+${OPENCLAW_HOME:-~/.openclaw}/workspace/memory/
 ├── hot/
 │   ├── session-{YYYY-MM-DD}-{HHMMSS}.md
 │   ├── session-{YYYY-MM-DD}-{HHMMSS}.jsonl
@@ -210,6 +210,6 @@ unified-self-improving session end
 
 ## 文件位置
 
-- 技能目录: `~/.openclaw/workspace/skills/unified-self-improving/`
-- 存储根目录: `~/.openclaw/workspace/memory/`
-- 脚本目录: `~/.openclaw/workspace/scripts/unified-self-improving/`
+- 技能目录: `${OPENCLAW_HOME:-~/.openclaw}/workspace/skills/unified-self-improving/`
+- 存储根目录: `${OPENCLAW_HOME:-~/.openclaw}/workspace/memory/`
+- 脚本目录: `${OPENCLAW_HOME:-~/.openclaw}/workspace/scripts/unified-self-improving/`

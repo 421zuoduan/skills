@@ -29,7 +29,7 @@ clawhub install lifelog
 
 或手动下载：
 ```bash
-git clone https://github.com/421zuoduan/lifelog.git
+git clone https://github.com/your-username/lifelog.git
 ```
 
 ### 2. 配置 Notion

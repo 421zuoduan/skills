@@ -20,7 +20,7 @@ if [[ -z "$DATABASE_ID" ]]; then
     exit 1
 fi
 API_VERSION="2022-06-28"
-OPENCLAW_URL="http://localhost:421"
+OPENCLAW_URL="${OPENCLAW_GATEWAY_URL:-http://localhost:OVERCLAW_GATEWAY_PORT}"
 
 # 参数：消息内容 [可选：日期YYYY-MM-DD]
 CONTENT="$1"
