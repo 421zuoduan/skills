@@ -30,7 +30,7 @@ metadata:
 
 ### 输入
 
-- 文件路径（绝对路径，如 `/root/.openclaw/qqbot/downloads/xxx.pptx`）
+- 文件路径（绝对路径，如 `/path/to/file.pptx`）
 
 ### 输出
 
@@ -42,7 +42,7 @@ metadata:
 `share-file.sh` - 一键分享文件
 
 ```bash
-bash /root/.openclaw/workspace/skills/file-share/share-file.sh <文件绝对路径>
+bash /path/to/skills/file-share/share-file.sh <文件绝对路径>
 ```
 
 返回：公网 URL

@@ -20,7 +20,7 @@ if [[ -z "$DATABASE_ID" ]]; then
     exit 1
 fi
 API_VERSION="2022-06-28"
-SPEC_FILE="/root/.openclaw/workspace/docs/lifelog-spec.md"
+SPEC_FILE="${LIFELOG_SPEC_FILE:-./docs/lifelog-spec.md}"
 
 # 读取规范文件
 load_spec() {

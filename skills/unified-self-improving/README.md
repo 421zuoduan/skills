@@ -2,7 +2,7 @@
 
 统一自我进化系统，整合 self-improving-agent、self-improving、mulch 三个技能的优势。
 
-**ClawHub**: https://clawhub.ai/421zuoduan/unified-self-improving
+**ClawHub**: https://clawhub.ai/{username}/unified-self-improving
 
 ## 功能
 
@@ -20,7 +20,7 @@
 clawhub install unified-self-improving
 
 # 或从 GitHub 克隆
-git clone https://github.com/421zuoduan/unified-self-improving.git
+git clone https://github.com/{username}/unified-self-improving.git
 ```
 
 ## 使用方法
