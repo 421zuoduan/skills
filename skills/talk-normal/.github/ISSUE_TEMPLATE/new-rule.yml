@@ -1,0 +1,51 @@
+name: New rule suggestion
+description: Propose a new anti-slop rule for prompt.md. Every rule needs a receipt.
+title: "[rule] "
+labels: ["rule-suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a rule. Every rule in `prompt.md` comes from a real annoying LLM reply. Fill in all five fields — submissions without a receipt will be closed.
+
+        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) first if you haven't.
+  - type: textarea
+    id: reply
+    attributes:
+      label: The LLM reply that triggered it
+      description: Verbatim. At least the annoying portion. No paraphrasing.
+      placeholder: Paste the exact reply here.
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model and rough date
+      description: Which LLM produced this, and roughly when.
+      placeholder: "e.g. GPT-5.4, 2026-04-10"
+    validations:
+      required: true
+  - type: input
+    id: pattern
+    attributes:
+      label: Pattern name
+      description: One line describing what is annoying.
+      placeholder: "e.g. Conditional follow-up offer"
+    validations:
+      required: true
+  - type: textarea
+    id: rule
+    attributes:
+      label: Proposed rule text
+      description: The exact text you think should go into prompt.md.
+      placeholder: "e.g. Never offer a conditional next step (\"if you want X, I can Y\"). Just answer the question."
+    validations:
+      required: true
+  - type: textarea
+    id: widespread
+    attributes:
+      label: Why it is widespread, not personal taste
+      description: Evidence this pattern appears across multiple models or conversations. This is the filter. Personal preferences will be rejected.
+      placeholder: "e.g. Seen in Claude 4.6, GPT-5.4, and Gemini 2.5 across unrelated prompts."
+    validations:
+      required: true

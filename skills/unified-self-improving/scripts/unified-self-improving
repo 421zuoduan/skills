@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# unified-self-improving 主入口
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+COMMANDS_DIR="$SCRIPT_DIR/commands"
+
+show_help() {
+    cat <<EOF
+unified-self-improving - 统一自我进化系统
+
+用法:
+    unified-self-improving <command> [options]
+
+命令:
+    log                  记录学习项 (correction/error/pattern)
+    query                查询学习项
+    move                 移动学习项层级
+    recall               从 COLD 召回学习项
+    namespace            命名空间管理
+    index                索引管理
+    import               批量导入
+    session              会话管理
+    detect-pattern       检测重复模式
+
+选项:
+    -h, --help           显示帮助
+
+示例:
+    unified-self-improving log -t correction -c "用户纠正了我"
+    unified-self-improving query --pattern "error"
+    unified-self-improving move --id learn-xxx --to warm
+    unified-self-improving namespace list
+    unified-self-improving index rebuild
+
+完整文档请查看: ~/.openclaw/workspace/skills/unified-self-improving/SKILL.md
+EOF
+}
+
+main() {
+    local command="${1:-}"
+    
+    if [[ -z "$command" ]]; then
+        show_help
+        exit 0
+    fi
+    
+    if [[ "$command" == "-h" || "$command" == "--help" ]]; then
+        show_help
+        exit 0
+    fi
+    
+    # 检查命令是否存在
+    local cmd_path="$COMMANDS_DIR/${command}.sh"
+    
+    if [[ ! -f "$cmd_path" ]]; then
+        echo "Error: Unknown command '$command'" >&2
+        echo ""
+        show_help
+        exit 1
+    fi
+    
+    # 执行命令
+    shift
+    source "$cmd_path"
+    main "$@"
+}
+
+main "$@"
