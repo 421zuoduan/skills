@@ -1,0 +1,6 @@
+[submodule "skills/coding-remake-skill"]
+	path = skills/coding-remake-skill
+	url = https://github.com/421zuoduan/coding-remake-skill.git
+[submodule "skills/Teacher-Bao-Writing-Skill"]
+	path = skills/Teacher-Bao-Writing-Skill
+	url = https://github.com/421zuoduan/Teacher-Bao-Writing-Skill.git

@@ -11,3 +11,5 @@
 | file-share | 通过公网 URL 分享服务器文件 |
 | unified-self-improving | 统一自我进化系统，结构化日志与模式检测 |
 | talk-normal | 简洁直接的沟通风格指令 |
+| coding-remake-skill | 项目重构技能 |
+| Teacher-Bao-Writing-Skill | 基于已有论文分析老师写作风格与技巧 |
