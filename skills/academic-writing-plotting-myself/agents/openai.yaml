@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing & Figures"
+  short_description: "Evidence-grounded academic writing and scientific plotting"
+  default_prompt: "Use $academic-writing-plotting-myself for manuscript writing, result audits, LaTeX, or scientific figures."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "UU 远程无视觉终端"
+  short_description: "通过 UU 纯文本通道执行远程命令、读写文件及配置新电脑"
+  default_prompt: "使用 $uu-remote-terminal 确认目标电脑身份，并通过纯文本接口完成远程操作。"

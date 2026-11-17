@@ -1,6 +1,6 @@
 # Skills
 
-个人自创和整理的 OpenClaw agent skills。
+个人自创和整理的 OpenClaw / Codex agent skills。
 
 ## 技能列表
 
@@ -13,3 +13,6 @@
 | talk-normal | 简洁直接的沟通风格指令 |
 | coding-remake-skill | 项目重构技能 |
 | Teacher-Bao-Writing-Skill | 基于已有论文分析老师写作风格与技巧 |
+| [academic-writing-plotting-myself](skills/academic-writing-plotting-myself/SKILL.md) | 学术写作、LaTeX、结果核验与科学绘图 |
+| [academic-ppt-for-presentation](skills/academic-ppt-for-presentation/SKILL.md) | 基于内置模板制作工作汇报、论文阅读 PPT 和可编辑科研配图 |
+| [uu-remote-terminal](skills/uu-remote-terminal/SKILL.md) | 通过 UU 远程纯文本通道执行命令、读写文件及配置新电脑；需另行配置命令桥运行时 |

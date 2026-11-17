@@ -1,0 +1,7 @@
+interface:
+  display_name: "Academic PPT for Presentation"
+  short_description: "复用模板制作学术汇报，凭渲染证据有限调整，或绘制科研配图"
+  icon_large: "./assets/preview.png"
+  default_prompt: "使用 $academic-ppt-for-presentation，根据我的目标制作学术汇报（复用内置模板、默认继承格式，仅针对实际渲染问题按受控流程有限调整），或用 PowerPoint 绘制论文与项目申请书中的图。"
+policy:
+  allow_implicit_invocation: true
